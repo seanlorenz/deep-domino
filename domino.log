@@ -525,3 +525,248 @@ To restore this directory as a Domino project, run:
 21:28:24,625  INFO FileStructureRepo:98 - Push to origin complete: local/master = Some(AnyObjectId[448189073ebe38b9dc7eadddef12d1b0628ffd13]), origin/master = Some(AnyObjectId[448189073ebe38b9dc7eadddef12d1b0628ffd13]).
 21:28:24,626  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = true
 21:28:24,626  INFO FileSyncClient:98 - Upload complete. Success = true
+21:35:03,390  INFO Domino:98 - ================================================================================
+21:35:03,393  INFO Domino:98 - starting client
+21:35:03,396 DEBUG Domino:79 - CWD = /Users/slorenz/Code/deep-domino
+21:35:03,397  INFO Domino:98 - executing command: sync
+21:35:04,032  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+21:35:04,046 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:35:05,212 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+21:35:05,214  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+21:35:05,221  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+21:35:05,331  INFO FileSyncClient:98 - Starting upload...
+21:35:05,489  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[448189073ebe38b9dc7eadddef12d1b0628ffd13]).
+21:35:05,656  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]).
+21:35:05,659  INFO FileStructureRepoSynchronizer:98 - Upload starting...
+21:35:05,663  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+21:35:05,673 DEBUG FileStructureRepoSynchronizer:79 - Local paths:
+	datasets/prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	README.md -> FileSignature(1433296608000,34,Sha1(a7ab275b14fab5d65c4312c5e296c5300f4420e3))
+	dl_h2o.py -> FileSignature(1433467010000,821,Sha1(a89115bbec892d7dd79144480d9c50cf321a1659))
+	dl_h2o.r -> FileSignature(1433467034000,1094,Sha1(d5d6e81e79ea1392bccfefe218a091ac0a45bd72))
+	.dominoignore -> FileSignature(1431963553000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+21:35:05,675  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]), refs/remotes/origin/master = Some(AnyObjectId[448189073ebe38b9dc7eadddef12d1b0628ffd13]).
+21:35:08,688  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]), refs/remotes/origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:08,690  INFO FileStructureRepo:98 - Fetch result = TrackingRefUpdate[refs/heads/master -> refs/remotes/origin/master (forced) 4481890..ed4eced]
+21:35:08,690  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = false
+21:35:08,690  INFO FileSyncClient:98 - Upload complete. Success = false
+21:35:08,694  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+21:35:08,694 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:35:08,763 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+21:35:08,763  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+21:35:08,765  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+21:35:08,767  INFO FileSyncClient:98 - Starting download...
+21:35:08,790  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]).
+21:35:08,801  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]).
+21:35:08,802  INFO FileStructureRepoSynchronizer:98 - Starting download...
+21:35:08,806  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+21:35:08,809  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]), refs/remotes/origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,302  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]), refs/remotes/origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,302  INFO FileStructureRepo:98 - Fetch result = [No Update]
+21:35:10,304  INFO FileStructureRepo:98 - Finding shared ancestor between commit c9a6317fc8e51a9cc310537191e0a732b5b1ef6f 1433468105 -----p and commit ed4eced230394b94c37da6c74743ec40b40a7f10 1433467863 -----p
+21:35:10,308 DEBUG FileStructureRepo:79 - Ancestors of Commit B, up until ancestors of A:
+commit ed4eced230394b94c37da6c74743ec40b40a7f10 1433467863 ----sp
+21:35:10,311  INFO FileStructureRepo:98 - Shared ancestor computed as commit 448189073ebe38b9dc7eadddef12d1b0628ffd13 1433467698 ---usp
+21:35:10,314 DEBUG FileStructureRepo:79 - BranchState between master and refs/remotes/origin/master with currentHeadCommitId=AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f], sharedAncestorId=commit 448189073ebe38b9dc7eadddef12d1b0628ffd13 1433467698 ---usp, serverTipCommitId=AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10] is BranchState(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f],commit 448189073ebe38b9dc7eadddef12d1b0628ffd13 1433467698 ---usp,AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,314  INFO FileStructureRepoSynchronizer:98 - Integrating fetch changes into local...
+21:35:10,316  INFO FileStructureRepo:98 - Starting fast-forward: master = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]), origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,330 DEBUG FileStructureRepo:79 - Merge result = Merge of revisions c9a6317fc8e51a9cc310537191e0a732b5b1ef6f, ed4eced230394b94c37da6c74743ec40b40a7f10 with base ed4eced230394b94c37da6c74743ec40b40a7f10 using strategy recursive resulted in: Aborted. 
+21:35:10,330  INFO FileStructureRepo:98 - Fast-forward failed with status = Aborted
+21:35:10,331  INFO FileStructureRepo:98 - Fast-forward complete: master = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]), origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,333  INFO FileStructureRepo:98 - Finding shared ancestor between commit c9a6317fc8e51a9cc310537191e0a732b5b1ef6f 1433468105 -----p and commit ed4eced230394b94c37da6c74743ec40b40a7f10 1433467863 -----p
+21:35:10,333 DEBUG FileStructureRepo:79 - Ancestors of Commit B, up until ancestors of A:
+commit ed4eced230394b94c37da6c74743ec40b40a7f10 1433467863 ----sp
+21:35:10,334  INFO FileStructureRepo:98 - Shared ancestor computed as commit 448189073ebe38b9dc7eadddef12d1b0628ffd13 1433467698 ---usp
+21:35:10,334 DEBUG FileStructureRepo:79 - BranchState between master and refs/remotes/origin/master with currentHeadCommitId=AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f], sharedAncestorId=commit 448189073ebe38b9dc7eadddef12d1b0628ffd13 1433467698 ---usp, serverTipCommitId=AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10] is BranchState(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f],commit 448189073ebe38b9dc7eadddef12d1b0628ffd13 1433467698 ---usp,AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,335  INFO FileStructureRepo:98 - Starting rebase onto origin: master = Some(AnyObjectId[c9a6317fc8e51a9cc310537191e0a732b5b1ef6f]), origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,406  INFO FileStructureRepo:98 - Rebase succeeded.
+21:35:10,407  INFO FileStructureRepo:98 - Rebase complete: master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]), origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:10,412 DEBUG FileStructureRepo:79 - Local changes:
+. File README.md up to date.
+. File dl_h2o.r up to date.
+. File .dominoignore up to date.
++ Adding file results/stdout.txt
+. File dl_h2o.py up to date.
+. File datasets/prostate.csv up to date.
+21:35:10,416 DEBUG FileStructureRepo:79 - Origin changes:
+. File README.md up to date.
+. File dl_h2o.r up to date.
+. File .dominoignore up to date.
++ Adding file results/stdout.txt
+. File dl_h2o.py up to date.
+. File datasets/prostate.csv up to date.
+21:35:10,430 DEBUG FileStructureRepo:79 - Merged updates:
+FileUpdate(. File datasets/prostate.csv up to date.,None)
+FileUpdate(. File dl_h2o.r up to date.,None)
+FileUpdate(. File README.md up to date.,None)
+FileUpdate(+ Adding file results/stdout.txt,None)
+FileUpdate(. File .dominoignore up to date.,None)
+FileUpdate(. File dl_h2o.py up to date.,None)
+21:35:10,432  INFO FileStructureRepoSynchronizer:98 - Integrating changes complete.
+21:35:10,432 DEBUG FileStructureRepoSynchronizer:79 - Download updates:
+FileUpdate(. File datasets/prostate.csv up to date.,None)
+FileUpdate(. File dl_h2o.r up to date.,None)
+FileUpdate(. File README.md up to date.,None)
+FileUpdate(+ Adding file results/stdout.txt,None)
+FileUpdate(. File .dominoignore up to date.,None)
+FileUpdate(. File dl_h2o.py up to date.,None)
+21:35:10,433  INFO FileStructureRepoSynchronizer:98 - Download updates size = 6
+21:35:10,481 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/55d0b5ae46fb285e5ddb7677d4613ccfd955a5be with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:35:10,546  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/55d0b5ae46fb285e5ddb7677d4613ccfd955a5be?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433468170&Signature=OUq5HlP%2B%2FAY93iyj9tQ7BrhlE2A%3D
+21:35:10,546  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+21:35:10,601 DEBUG Jets3tProperties:317 - s3service.https-only=true
+21:35:10,601 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+21:35:10,614 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:35:10,614 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:35:10,614 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:35:10,614 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:35:10,614 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:35:10,618 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:35:10,618 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:35:10,618 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:35:10,628 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:35:10,628 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:35:10,628 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:35:10,630 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:35:10,630 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:35:10,630 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:35:10,631 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:35:10,631 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:35:10,631 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+21:35:10,631 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+21:35:10,631 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:35:10,631 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:35:10,632 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:35:10,632 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:35:10,632 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:35:10,632 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:35:10,632 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:35:10,632 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:35:10,632 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:35:10,633 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:35:10,633 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:35:10,633 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:35:10,633 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:35:10,633 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:35:10,633 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:35:10,633 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:35:10,633 DEBUG Jets3tProperties:263 - devpay.user-token=null
+21:35:10,633 DEBUG Jets3tProperties:263 - devpay.product-token=null
+21:35:10,633 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+21:35:10,633 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:35:10,635 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/55d0b5ae46fb285e5ddb7677d4613ccfd955a5be?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433468170&Signature=OUq5HlP%2B%2FAY93iyj9tQ7BrhlE2A%3D', expecting response codes: [200]
+21:35:10,635 DEBUG RestStorageService:312 - Headers: []
+21:35:10,636 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+21:35:10,660 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+21:35:10,660 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+21:35:10,696 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com], timeout = 0
+21:35:10,697 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+21:35:10,697 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+21:35:10,697 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+21:35:10,697 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]]
+21:35:11,135 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3.amazonaws.com:443
+21:35:11,610 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+21:35:11,621 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+21:35:11,622 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+21:35:11,622 DEBUG DefaultClientConnection:264 - Sending request: GET /55d0b5ae46fb285e5ddb7677d4613ccfd955a5be?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433468170&Signature=OUq5HlP%2B%2FAY93iyj9tQ7BrhlE2A%3D HTTP/1.1
+21:35:11,623 DEBUG headers:268 - >> GET /55d0b5ae46fb285e5ddb7677d4613ccfd955a5be?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433468170&Signature=OUq5HlP%2B%2FAY93iyj9tQ7BrhlE2A%3D HTTP/1.1
+21:35:11,624 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3.amazonaws.com
+21:35:11,624 DEBUG headers:271 - >> Connection: Keep-Alive
+21:35:11,624 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:35:11,780 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+21:35:11,780 DEBUG headers:252 - << HTTP/1.1 200 OK
+21:35:11,781 DEBUG headers:255 - << x-amz-id-2: TSiEszRmFTImWstgYS3/xZ+sA3k2SaDeSTsU4BeoxbprPP0ZKJGnVHcr3hwtlLlkxCF3IhkgB8E=
+21:35:11,781 DEBUG headers:255 - << x-amz-request-id: F54D434A019D33DA
+21:35:11,781 DEBUG headers:255 - << Date: Fri, 05 Jun 2015 01:35:12 GMT
+21:35:11,781 DEBUG headers:255 - << Content-Encoding: gzip
+21:35:11,781 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 1040
+21:35:11,782 DEBUG headers:255 - << Last-Modified: Fri, 05 Jun 2015 01:31:04 GMT
+21:35:11,782 DEBUG headers:255 - << ETag: "64024ca3b34d1fe9e647d3f02474cc21"
+21:35:11,782 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+21:35:11,782 DEBUG headers:255 - << Accept-Ranges: bytes
+21:35:11,782 DEBUG headers:255 - << Content-Type: application/x-gzip
+21:35:11,782 DEBUG headers:255 - << Content-Length: 493
+21:35:11,783 DEBUG headers:255 - << Server: AmazonS3
+21:35:11,787 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+21:35:11,789 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: TSiEszRmFTImWstgYS3/xZ+sA3k2SaDeSTsU4BeoxbprPP0ZKJGnVHcr3hwtlLlkxCF3IhkgB8E=, x-amz-request-id: F54D434A019D33DA, Date: Fri, 05 Jun 2015 01:35:12 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 1040, Last-Modified: Fri, 05 Jun 2015 01:31:04 GMT, ETag: "64024ca3b34d1fe9e647d3f02474cc21", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 493, Server: AmazonS3]
+21:35:11,789 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@72f3a4a1
+21:35:11,789 DEBUG RestStorageService:375 - Entity length: 493
+21:35:11,789 DEBUG RestStorageService:387 - Received expected response code: true
+21:35:11,789 DEBUG RestStorageService:388 -   expected code(s): [200].
+21:35:11,792 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+21:35:11,792 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+21:35:11,792 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="64024ca3b34d1fe9e647d3f02474cc21"
+21:35:11,792 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+21:35:11,792 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Fri, 05 Jun 2015 01:35:12 GMT
+21:35:11,792 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 01:35:12 GMT' into Date object for key: Date
+21:35:11,794 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=493
+21:35:11,794 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+21:35:11,794 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+21:35:11,795 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Fri, 05 Jun 2015 01:31:04 GMT
+21:35:11,795 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 01:31:04 GMT' into Date object for key: Last-Modified
+21:35:11,795 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+21:35:11,795 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+21:35:11,795 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+21:35:11,795 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+21:35:11,822 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+21:35:11,823 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+21:35:11,823 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]; keep alive indefinitely
+21:35:11,823 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+21:35:11,823 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+21:35:11,832  INFO LocalFileDirectory:98 - Starting local data directory processing...
+21:35:11,833 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File datasets/prostate.csv up to date.,None)...
+21:35:11,834 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File datasets/prostate.csv up to date.,None) complete.
+21:35:11,834 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.r up to date.,None)...
+21:35:11,834 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.r up to date.,None) complete.
+21:35:11,835 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File README.md up to date.,None)...
+21:35:11,835 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File README.md up to date.,None) complete.
+21:35:11,835 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file results/stdout.txt,None)...
+21:35:11,836 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file results/stdout.txt,None) complete.
+21:35:11,837 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File .dominoignore up to date.,None)...
+21:35:11,837 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File .dominoignore up to date.,None) complete.
+21:35:11,837 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.py up to date.,None)...
+21:35:11,837 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.py up to date.,None) complete.
+21:35:11,838  INFO LocalFileDirectory:98 - Local data directory processing complete.
+21:35:11,838  INFO FileSyncClient:98 - Local data directory processing complete.
+21:35:11,839  INFO FileSyncClient:98 - Clearing local blob directory
+21:35:11,839  INFO FileSyncClient:98 - Download complete.
+21:35:11,841  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+21:35:11,841 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:35:11,907 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+21:35:11,907  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+21:35:11,909  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+21:35:11,937  INFO FileSyncClient:98 - Starting upload...
+21:35:11,962 DEBUG RestUtils$ThreadSafeConnManager:282 - Shutting down
+21:35:11,962 DEBUG ConnPoolByRoute:794 - Closing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+21:35:11,962 DEBUG DefaultClientConnection:165 - Connection closed
+21:35:11,969  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]).
+21:35:11,978  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]).
+21:35:11,979  INFO FileStructureRepoSynchronizer:98 - Upload starting...
+21:35:11,983  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+21:35:11,989 DEBUG FileStructureRepoSynchronizer:79 - Local paths:
+	datasets/prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	README.md -> FileSignature(1433296608000,34,Sha1(a7ab275b14fab5d65c4312c5e296c5300f4420e3))
+	dl_h2o.py -> FileSignature(1433467010000,821,Sha1(a89115bbec892d7dd79144480d9c50cf321a1659))
+	dl_h2o.r -> FileSignature(1433467034000,1094,Sha1(d5d6e81e79ea1392bccfefe218a091ac0a45bd72))
+	results/stdout.txt -> FileSignature(1433467863000,1040,Sha1(55d0b5ae46fb285e5ddb7677d4613ccfd955a5be))
+	.dominoignore -> FileSignature(1431963553000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+21:35:11,990  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]), refs/remotes/origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:13,248  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]), refs/remotes/origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:13,249  INFO FileStructureRepo:98 - Fetch result = [No Update]
+21:35:13,252  INFO FileStructureRepo:98 - Computing diffs between base = refs/remotes/origin/master (ed4eced230394b94c37da6c74743ec40b40a7f10) and target = HEAD (8f942fc965a5ee1ba96ba73197b99cf8ba216481).
+21:35:13,257 DEBUG FileStructureRepo:79 - Updates:
+	- Deleting file ex_h2o.py
+	. File results/stdout.txt up to date.
+	+ Adding file dl_h2o.py
+	. File README.md up to date.
+	. File .dominoignore up to date.
+	+ Adding file dl_h2o.r
+	- Deleting file ex_h2o.r
+	. File datasets/prostate.csv up to date.
+21:35:13,257  INFO FileStructureRepoSynchronizer:98 - Upload before push starting
+21:35:13,962  INFO FileStructureRepoSynchronizer:98 - Upload before push complete
+21:35:13,963  INFO FileStructureRepo:98 - Starting push to origin: local/master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]), origin/master = Some(AnyObjectId[ed4eced230394b94c37da6c74743ec40b40a7f10]).
+21:35:16,304 DEBUG FileStructureRepo:79 - Push result: [RemoteRefUpdate[remoteName=refs/heads/master, OK, (null)...8f942fc965a5ee1ba96ba73197b99cf8ba216481, fastForward, srcRef=refs/heads/master, message=null]]
+21:35:16,306  INFO FileStructureRepo:98 - Push to origin complete: local/master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]), origin/master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]).
+21:35:16,306  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = true
+21:35:16,307  INFO FileSyncClient:98 - Upload complete. Success = true

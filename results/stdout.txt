@@ -1,0 +1,18 @@
+### SETUP PROCESS STARTED ###
+### SETUP PROCESS FINISHED ###
+
+
+No instance found at ip and port: localhost:54321. Trying to start local jar...
+
+
+No jar file found. Could not start local instance.
+Traceback (most recent call last):
+  File "ex_h2o.py", line 3, in <module>
+    h2o.init()
+  File "/usr/local/lib/python2.7/dist-packages/h2o/h2o.py", line 418, in init
+    H2OConnection(ip=ip, port=port,start_h2o=start_h2o,enable_assertions=enable_assertions,license=license,max_mem_size_GB=max_mem_size_GB,min_mem_size_GB=min_mem_size_GB,ice_root=ice_root,strict_version_check=strict_version_check)
+  File "/usr/local/lib/python2.7/dist-packages/h2o/connection.py", line 67, in __init__
+    cld = self._connect(size)
+  File "/usr/local/lib/python2.7/dist-packages/h2o/connection.py", line 151, in _connect
+    raise EnvironmentError("Max retries exceeded. Could not establish link to the H2O cloud @ " + str(self._ip) + ":" + str(self._port))
+EnvironmentError: Max retries exceeded. Could not establish link to the H2O cloud @ localhost:54321

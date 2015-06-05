@@ -3,7 +3,7 @@ library(h2o)
 localH2O = h2o.init()
 
 # Load the dataset
-prostate.hex = h2o.uploadFile(localH2O, path = system.file("extdata", "datasets/prostate.csv", package="h2o"), destination_frame = "prostate.hex")
+prostate.hex = h2o.uploadFile(localH2O, path = system.file("extdata", "prostate.csv", package="h2o"), destination_frame = "prostate.hex")
 summary(prostate.hex)
 
 # Set the CAPSULE column to be a factor column then build the model
