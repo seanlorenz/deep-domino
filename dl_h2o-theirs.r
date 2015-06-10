@@ -8,13 +8,13 @@ summary(prostate.hex)
 
 # Set the CAPSULE column to be a factor column then build the model
 prostate.hex$CAPSULE = as.factor(prostate.hex$CAPSULE)
-model = h2o.deeplearning(x = setdiff(colnames(prostate.hex),
-c("ID","CAPSULE")),
-y = "CAPSULE",
-training_frame = prostate.hex,
-activation = "RectifierWithDropout",
-hidden = c(10, 10, 10),
-epochs = 10000)
+model = h2o.deeplearning(x = setdiff(colnames(prostate.hex), 
+                         c("ID","CAPSULE")), 
+                         y = "CAPSULE", 
+                         training_frame = prostate.hex, 
+                         activation = "RectifierWithDropout",
+                         hidden = c(10, 10, 10), 
+                         epochs = 10000)
 print(model@model$model_summary)
 
 # Make predictions with the trained model

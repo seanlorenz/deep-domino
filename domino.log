@@ -770,3 +770,1440 @@ FileUpdate(. File dl_h2o.py up to date.,None)
 21:35:16,306  INFO FileStructureRepo:98 - Push to origin complete: local/master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]), origin/master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]).
 21:35:16,306  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = true
 21:35:16,307  INFO FileSyncClient:98 - Upload complete. Success = true
+22:24:11,367  INFO Domino:98 - ================================================================================
+22:24:11,369  INFO Domino:98 - starting client
+22:24:11,371 DEBUG Domino:79 - CWD = /Users/slorenz/Code/deep-domino
+22:24:11,372  INFO Domino:98 - executing command: sync
+22:24:11,744  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+22:24:11,749 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+22:24:13,172 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+22:24:13,174  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+22:24:13,179  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+22:24:13,283  INFO FileSyncClient:98 - Starting upload...
+22:24:13,413  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]).
+22:24:13,557  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]).
+22:24:13,560  INFO FileStructureRepoSynchronizer:98 - Upload starting...
+22:24:13,566  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+22:24:13,575 DEBUG FileStructureRepoSynchronizer:79 - Local paths:
+	datasets/prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	README.md -> FileSignature(1433296608000,34,Sha1(a7ab275b14fab5d65c4312c5e296c5300f4420e3))
+	dl_h2o.py -> FileSignature(1433470849000,821,Sha1(a89115bbec892d7dd79144480d9c50cf321a1659))
+	prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	dl_h2o.r -> FileSignature(1433470956000,1085,Sha1(d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2))
+	results/stdout.txt -> FileSignature(1433467863000,1040,Sha1(55d0b5ae46fb285e5ddb7677d4613ccfd955a5be))
+	.dominoignore -> FileSignature(1431963553000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+22:24:13,577  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]), refs/remotes/origin/master = Some(AnyObjectId[8f942fc965a5ee1ba96ba73197b99cf8ba216481]).
+22:24:16,477  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]), refs/remotes/origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:16,479  INFO FileStructureRepo:98 - Fetch result = TrackingRefUpdate[refs/heads/master -> refs/remotes/origin/master (forced) 8f942fc..b2f95b2]
+22:24:16,479  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = false
+22:24:16,479  INFO FileSyncClient:98 - Upload complete. Success = false
+22:24:16,483  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+22:24:16,483 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+22:24:16,545 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+22:24:16,546  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+22:24:16,547  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+22:24:16,548  INFO FileSyncClient:98 - Starting download...
+22:24:16,574  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]).
+22:24:16,585  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]).
+22:24:16,586  INFO FileStructureRepoSynchronizer:98 - Starting download...
+22:24:16,590  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+22:24:16,592  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]), refs/remotes/origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,869  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]), refs/remotes/origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,869  INFO FileStructureRepo:98 - Fetch result = [No Update]
+22:24:18,871  INFO FileStructureRepo:98 - Finding shared ancestor between commit 7043323eba3b326f287f1bc9ffc7fae0d5eb6300 1433471053 -----p and commit b2f95b263b7b8f930d3c8e0daed552ab96beff46 1433469272 -----p
+22:24:18,874 DEBUG FileStructureRepo:79 - Ancestors of Commit B, up until ancestors of A:
+commit b2f95b263b7b8f930d3c8e0daed552ab96beff46 1433469272 ----sp
+22:24:18,875  INFO FileStructureRepo:98 - Shared ancestor computed as commit 8f942fc965a5ee1ba96ba73197b99cf8ba216481 1433468110 ---usp
+22:24:18,876 DEBUG FileStructureRepo:79 - BranchState between master and refs/remotes/origin/master with currentHeadCommitId=AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300], sharedAncestorId=commit 8f942fc965a5ee1ba96ba73197b99cf8ba216481 1433468110 ---usp, serverTipCommitId=AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46] is BranchState(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300],commit 8f942fc965a5ee1ba96ba73197b99cf8ba216481 1433468110 ---usp,AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,877  INFO FileStructureRepoSynchronizer:98 - Integrating fetch changes into local...
+22:24:18,877  INFO FileStructureRepo:98 - Starting fast-forward: master = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]), origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,887 DEBUG FileStructureRepo:79 - Merge result = Merge of revisions 7043323eba3b326f287f1bc9ffc7fae0d5eb6300, b2f95b263b7b8f930d3c8e0daed552ab96beff46 with base b2f95b263b7b8f930d3c8e0daed552ab96beff46 using strategy recursive resulted in: Aborted. 
+22:24:18,887  INFO FileStructureRepo:98 - Fast-forward failed with status = Aborted
+22:24:18,888  INFO FileStructureRepo:98 - Fast-forward complete: master = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]), origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,888  INFO FileStructureRepo:98 - Finding shared ancestor between commit 7043323eba3b326f287f1bc9ffc7fae0d5eb6300 1433471053 -----p and commit b2f95b263b7b8f930d3c8e0daed552ab96beff46 1433469272 -----p
+22:24:18,889 DEBUG FileStructureRepo:79 - Ancestors of Commit B, up until ancestors of A:
+commit b2f95b263b7b8f930d3c8e0daed552ab96beff46 1433469272 ----sp
+22:24:18,889  INFO FileStructureRepo:98 - Shared ancestor computed as commit 8f942fc965a5ee1ba96ba73197b99cf8ba216481 1433468110 ---usp
+22:24:18,889 DEBUG FileStructureRepo:79 - BranchState between master and refs/remotes/origin/master with currentHeadCommitId=AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300], sharedAncestorId=commit 8f942fc965a5ee1ba96ba73197b99cf8ba216481 1433468110 ---usp, serverTipCommitId=AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46] is BranchState(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300],commit 8f942fc965a5ee1ba96ba73197b99cf8ba216481 1433468110 ---usp,AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,890  INFO FileStructureRepo:98 - Starting rebase onto origin: master = Some(AnyObjectId[7043323eba3b326f287f1bc9ffc7fae0d5eb6300]), origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,967  INFO FileStructureRepo:98 - Rebase succeeded.
+22:24:18,968  INFO FileStructureRepo:98 - Rebase complete: master = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]), origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:18,974 DEBUG FileStructureRepo:79 - Local changes:
++ Adding file domino.last.dump.rda
+x Modifying file results/stdout.txt
++ Adding file domino.workspace.RData
+. File prostate.csv up to date.
+. File README.md up to date.
+. File dl_h2o.r up to date.
+. File .dominoignore up to date.
+. File datasets/prostate.csv up to date.
+. File dl_h2o.py up to date.
+22:24:18,979 DEBUG FileStructureRepo:79 - Origin changes:
++ Adding file domino.last.dump.rda
+x Modifying file results/stdout.txt
++ Adding file domino.workspace.RData
+. File prostate.csv up to date.
+. File README.md up to date.
+. File dl_h2o.r up to date.
+. File .dominoignore up to date.
+. File datasets/prostate.csv up to date.
+. File dl_h2o.py up to date.
+22:24:18,991 DEBUG FileStructureRepo:79 - Merged updates:
+FileUpdate(. File prostate.csv up to date.,None)
+FileUpdate(. File dl_h2o.py up to date.,None)
+FileUpdate(+ Adding file domino.last.dump.rda,None)
+FileUpdate(+ Adding file domino.workspace.RData,None)
+FileUpdate(. File dl_h2o.r up to date.,None)
+FileUpdate(x Modifying file results/stdout.txt,None)
+FileUpdate(. File .dominoignore up to date.,None)
+FileUpdate(. File datasets/prostate.csv up to date.,None)
+FileUpdate(. File README.md up to date.,None)
+22:24:18,992  INFO FileStructureRepoSynchronizer:98 - Integrating changes complete.
+22:24:18,993 DEBUG FileStructureRepoSynchronizer:79 - Download updates:
+FileUpdate(. File prostate.csv up to date.,None)
+FileUpdate(. File dl_h2o.py up to date.,None)
+FileUpdate(+ Adding file domino.last.dump.rda,None)
+FileUpdate(+ Adding file domino.workspace.RData,None)
+FileUpdate(. File dl_h2o.r up to date.,None)
+FileUpdate(x Modifying file results/stdout.txt,None)
+FileUpdate(. File .dominoignore up to date.,None)
+FileUpdate(. File datasets/prostate.csv up to date.,None)
+FileUpdate(. File README.md up to date.,None)
+22:24:18,993  INFO FileStructureRepoSynchronizer:98 - Download updates size = 9
+22:24:19,018 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/187fac91b3e983d40f95860e551366bdce834b29 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+22:24:19,018 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/26e2c5d5c4d620ead24fbc39d75933917e85fbd6 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+22:24:19,018 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/8f74243b445d6bbe082bc5c7f19ad6cbe856c493 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+22:24:19,085  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/187fac91b3e983d40f95860e551366bdce834b29?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471118&Signature=ywBd%2BG5qA3oKjtynj%2BfMOmoIE8M%3D
+22:24:19,085  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+22:24:19,115 DEBUG Jets3tProperties:317 - s3service.https-only=true
+22:24:19,115 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+22:24:19,121 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:19,121 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:19,121 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:19,122 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:19,122 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:19,125 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:19,125 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:19,125 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:19,132 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:19,132 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:19,132 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,134 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:19,134 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:19,135 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:19,135 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:19,135 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:19,136 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+22:24:19,136 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+22:24:19,137 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:19,137 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:19,137 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:19,137 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:19,138 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:19,138 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:19,138 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:19,138 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:19,138 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:19,138 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:19,138 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,139 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:19,139 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:19,139 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:19,139 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:19,139 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:19,139 DEBUG Jets3tProperties:263 - devpay.user-token=null
+22:24:19,139 DEBUG Jets3tProperties:263 - devpay.product-token=null
+22:24:19,139 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+22:24:19,140 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,141 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/187fac91b3e983d40f95860e551366bdce834b29?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471118&Signature=ywBd%2BG5qA3oKjtynj%2BfMOmoIE8M%3D', expecting response codes: [200]
+22:24:19,141 DEBUG RestStorageService:312 - Headers: []
+22:24:19,141 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+22:24:19,156 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+22:24:19,156 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+22:24:19,187 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com], timeout = 0
+22:24:19,188 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+22:24:19,189 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:19,189 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:19,189 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]]
+22:24:19,232  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/26e2c5d5c4d620ead24fbc39d75933917e85fbd6?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=TgxbD2qR2d4ST7JiM0OxitrCewQ%3D
+22:24:19,233  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+22:24:19,232  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/8f74243b445d6bbe082bc5c7f19ad6cbe856c493?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=g350IRl2OLyUexzsCCJNJgwcFqs%3D
+22:24:19,234  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+22:24:19,234 DEBUG Jets3tProperties:317 - s3service.https-only=true
+22:24:19,234 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+22:24:19,233 DEBUG Jets3tProperties:317 - s3service.https-only=true
+22:24:19,234 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+22:24:19,235 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:19,235 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:19,235 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:19,235 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:19,236 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:19,236 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:19,235 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:19,236 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:19,236 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:19,237 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:19,237 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:19,237 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:19,237 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:19,236 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:19,238 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:19,238 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:19,238 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:19,238 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:19,239 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,238 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:19,239 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:19,239 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:19,240 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:19,240 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:19,240 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:19,240 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+22:24:19,240 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+22:24:19,239 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:19,240 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:19,241 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:19,241 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:19,241 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:19,241 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:19,241 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:19,241 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:19,241 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:19,241 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,242 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:19,242 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:19,242 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,242 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:19,242 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:19,242 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:19,243 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:19,243 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:19,243 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+22:24:19,243 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+22:24:19,242 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:19,243 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:19,243 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:19,244 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:19,244 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:19,244 DEBUG Jets3tProperties:263 - devpay.user-token=null
+22:24:19,244 DEBUG Jets3tProperties:263 - devpay.product-token=null
+22:24:19,243 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:19,244 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:19,244 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:19,245 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:19,245 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:19,245 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:19,245 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:19,245 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:19,244 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+22:24:19,245 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,245 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:19,246 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/8f74243b445d6bbe082bc5c7f19ad6cbe856c493?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=g350IRl2OLyUexzsCCJNJgwcFqs%3D', expecting response codes: [200]
+22:24:19,246 DEBUG RestStorageService:312 - Headers: []
+22:24:19,246 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+22:24:19,246 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:19,247 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,247 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:19,247 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:19,247 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:19,247 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:19,247 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:19,247 DEBUG Jets3tProperties:263 - devpay.user-token=null
+22:24:19,248 DEBUG Jets3tProperties:263 - devpay.product-token=null
+22:24:19,248 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+22:24:19,248 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:19,248 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/26e2c5d5c4d620ead24fbc39d75933917e85fbd6?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=TgxbD2qR2d4ST7JiM0OxitrCewQ%3D', expecting response codes: [200]
+22:24:19,248 DEBUG RestStorageService:312 - Headers: []
+22:24:19,248 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+22:24:19,250 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+22:24:19,250 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+22:24:19,251 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com], timeout = 0
+22:24:19,251 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+22:24:19,251 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:19,251 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:19,251 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]]
+22:24:19,252 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+22:24:19,252 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+22:24:19,252 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com], timeout = 0
+22:24:19,252 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+22:24:19,253 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:19,253 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:19,253 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]]
+22:24:19,647 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3.amazonaws.com:443
+22:24:19,647 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3.amazonaws.com:443
+22:24:19,647 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3.amazonaws.com:443
+22:24:20,146 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+22:24:20,146 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+22:24:20,146 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+22:24:20,155 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+22:24:20,156 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+22:24:20,155 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+22:24:20,157 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+22:24:20,156 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+22:24:20,156 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+22:24:20,157 DEBUG DefaultClientConnection:264 - Sending request: GET /8f74243b445d6bbe082bc5c7f19ad6cbe856c493?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=g350IRl2OLyUexzsCCJNJgwcFqs%3D HTTP/1.1
+22:24:20,157 DEBUG DefaultClientConnection:264 - Sending request: GET /187fac91b3e983d40f95860e551366bdce834b29?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471118&Signature=ywBd%2BG5qA3oKjtynj%2BfMOmoIE8M%3D HTTP/1.1
+22:24:20,157 DEBUG DefaultClientConnection:264 - Sending request: GET /26e2c5d5c4d620ead24fbc39d75933917e85fbd6?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=TgxbD2qR2d4ST7JiM0OxitrCewQ%3D HTTP/1.1
+22:24:20,159 DEBUG headers:268 - >> GET /8f74243b445d6bbe082bc5c7f19ad6cbe856c493?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=g350IRl2OLyUexzsCCJNJgwcFqs%3D HTTP/1.1
+22:24:20,159 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3.amazonaws.com
+22:24:20,159 DEBUG headers:271 - >> Connection: Keep-Alive
+22:24:20,159 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:20,159 DEBUG headers:268 - >> GET /26e2c5d5c4d620ead24fbc39d75933917e85fbd6?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471119&Signature=TgxbD2qR2d4ST7JiM0OxitrCewQ%3D HTTP/1.1
+22:24:20,160 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3.amazonaws.com
+22:24:20,159 DEBUG headers:268 - >> GET /187fac91b3e983d40f95860e551366bdce834b29?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471118&Signature=ywBd%2BG5qA3oKjtynj%2BfMOmoIE8M%3D HTTP/1.1
+22:24:20,160 DEBUG headers:271 - >> Connection: Keep-Alive
+22:24:20,160 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3.amazonaws.com
+22:24:20,160 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:20,160 DEBUG headers:271 - >> Connection: Keep-Alive
+22:24:20,161 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:20,295 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+22:24:20,295 DEBUG headers:252 - << HTTP/1.1 200 OK
+22:24:20,295 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+22:24:20,295 DEBUG headers:255 - << x-amz-id-2: /tIT0LXhsHNvFeT8vmVToFhj2+7aS7jF5XqSssftySTb0ymhN5BnLbIgPmglS19ytiCOz0x0aAc=
+22:24:20,295 DEBUG headers:252 - << HTTP/1.1 200 OK
+22:24:20,295 DEBUG headers:255 - << x-amz-request-id: 80206280CD065F4D
+22:24:20,296 DEBUG headers:255 - << Date: Fri, 05 Jun 2015 02:24:21 GMT
+22:24:20,296 DEBUG headers:255 - << Content-Encoding: gzip
+22:24:20,296 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 850
+22:24:20,296 DEBUG headers:255 - << Last-Modified: Fri, 05 Jun 2015 01:54:33 GMT
+22:24:20,297 DEBUG headers:255 - << ETag: "4756e433bc062cd57fe565a7277c0155"
+22:24:20,297 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+22:24:20,297 DEBUG headers:255 - << Accept-Ranges: bytes
+22:24:20,297 DEBUG headers:255 - << Content-Type: application/x-gzip
+22:24:20,297 DEBUG headers:255 - << Content-Length: 873
+22:24:20,298 DEBUG headers:255 - << Server: AmazonS3
+22:24:20,296 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+22:24:20,296 DEBUG headers:255 - << x-amz-id-2: FMwb75gchJpf0QnSd7vPnZPjvSme/MiSz4oPDN2XLZJIrrCUnpRPQOzYJllbYy0LwLWQwGvUJlI=
+22:24:20,298 DEBUG headers:252 - << HTTP/1.1 200 OK
+22:24:20,298 DEBUG headers:255 - << x-amz-request-id: A3B638914BB46A43
+22:24:20,298 DEBUG headers:255 - << x-amz-id-2: TIfJutF7B5uJx1nPllBeCq+81Cp5g2Yadd58nOPijmV6fZW2KEpQF4bWVuNBKU2wRdO8Pfw23IQ=
+22:24:20,298 DEBUG headers:255 - << Date: Fri, 05 Jun 2015 02:24:21 GMT
+22:24:20,299 DEBUG headers:255 - << x-amz-request-id: 44EEF46565822B59
+22:24:20,299 DEBUG headers:255 - << Content-Encoding: gzip
+22:24:20,299 DEBUG headers:255 - << Date: Fri, 05 Jun 2015 02:24:21 GMT
+22:24:20,299 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 2985
+22:24:20,299 DEBUG headers:255 - << Content-Encoding: gzip
+22:24:20,299 DEBUG headers:255 - << Last-Modified: Fri, 05 Jun 2015 01:54:33 GMT
+22:24:20,299 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 335
+22:24:20,300 DEBUG headers:255 - << Last-Modified: Fri, 05 Jun 2015 01:54:33 GMT
+22:24:20,300 DEBUG headers:255 - << ETag: "ef41ef39515ff548ab648b6d8adb21c9"
+22:24:20,300 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+22:24:20,300 DEBUG headers:255 - << Accept-Ranges: bytes
+22:24:20,300 DEBUG headers:255 - << Content-Type: application/x-gzip
+22:24:20,300 DEBUG headers:255 - << Content-Length: 358
+22:24:20,301 DEBUG headers:255 - << Server: AmazonS3
+22:24:20,300 DEBUG headers:255 - << ETag: "c34114b3b0f0d976adb41a8a577ecd8d"
+22:24:20,301 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+22:24:20,301 DEBUG headers:255 - << Accept-Ranges: bytes
+22:24:20,302 DEBUG headers:255 - << Content-Type: application/x-gzip
+22:24:20,302 DEBUG headers:255 - << Content-Length: 1429
+22:24:20,302 DEBUG headers:255 - << Server: AmazonS3
+22:24:20,302 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+22:24:20,302 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+22:24:20,302 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+22:24:20,303 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: FMwb75gchJpf0QnSd7vPnZPjvSme/MiSz4oPDN2XLZJIrrCUnpRPQOzYJllbYy0LwLWQwGvUJlI=, x-amz-request-id: A3B638914BB46A43, Date: Fri, 05 Jun 2015 02:24:21 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 2985, Last-Modified: Fri, 05 Jun 2015 01:54:33 GMT, ETag: "c34114b3b0f0d976adb41a8a577ecd8d", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 1429, Server: AmazonS3]
+22:24:20,303 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: TIfJutF7B5uJx1nPllBeCq+81Cp5g2Yadd58nOPijmV6fZW2KEpQF4bWVuNBKU2wRdO8Pfw23IQ=, x-amz-request-id: 44EEF46565822B59, Date: Fri, 05 Jun 2015 02:24:21 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 335, Last-Modified: Fri, 05 Jun 2015 01:54:33 GMT, ETag: "ef41ef39515ff548ab648b6d8adb21c9", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 358, Server: AmazonS3]
+22:24:20,303 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@4fab374
+22:24:20,303 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: /tIT0LXhsHNvFeT8vmVToFhj2+7aS7jF5XqSssftySTb0ymhN5BnLbIgPmglS19ytiCOz0x0aAc=, x-amz-request-id: 80206280CD065F4D, Date: Fri, 05 Jun 2015 02:24:21 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 850, Last-Modified: Fri, 05 Jun 2015 01:54:33 GMT, ETag: "4756e433bc062cd57fe565a7277c0155", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 873, Server: AmazonS3]
+22:24:20,304 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@404ae411
+22:24:20,304 DEBUG RestStorageService:375 - Entity length: 873
+22:24:20,304 DEBUG RestStorageService:375 - Entity length: 358
+22:24:20,304 DEBUG RestStorageService:387 - Received expected response code: true
+22:24:20,303 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@175bb1df
+22:24:20,304 DEBUG RestStorageService:375 - Entity length: 1429
+22:24:20,305 DEBUG RestStorageService:387 - Received expected response code: true
+22:24:20,305 DEBUG RestStorageService:388 -   expected code(s): [200].
+22:24:20,304 DEBUG RestStorageService:388 -   expected code(s): [200].
+22:24:20,304 DEBUG RestStorageService:387 - Received expected response code: true
+22:24:20,305 DEBUG RestStorageService:388 -   expected code(s): [200].
+22:24:20,307 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+22:24:20,307 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+22:24:20,307 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+22:24:20,307 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+22:24:20,307 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+22:24:20,308 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="4756e433bc062cd57fe565a7277c0155"
+22:24:20,308 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+22:24:20,308 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Fri, 05 Jun 2015 02:24:21 GMT
+22:24:20,308 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 02:24:21 GMT' into Date object for key: Date
+22:24:20,307 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="ef41ef39515ff548ab648b6d8adb21c9"
+22:24:20,307 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+22:24:20,308 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+22:24:20,308 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=873
+22:24:20,308 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="c34114b3b0f0d976adb41a8a577ecd8d"
+22:24:20,309 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+22:24:20,308 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Fri, 05 Jun 2015 02:24:21 GMT
+22:24:20,309 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+22:24:20,309 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+22:24:20,309 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Fri, 05 Jun 2015 01:54:33 GMT
+22:24:20,309 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 01:54:33 GMT' into Date object for key: Last-Modified
+22:24:20,309 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 02:24:21 GMT' into Date object for key: Date
+22:24:20,309 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Fri, 05 Jun 2015 02:24:21 GMT
+22:24:20,310 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+22:24:20,310 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+22:24:20,310 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=358
+22:24:20,310 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 02:24:21 GMT' into Date object for key: Date
+22:24:20,310 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+22:24:20,311 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=1429
+22:24:20,310 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+22:24:20,311 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+22:24:20,311 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+22:24:20,311 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+22:24:20,311 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+22:24:20,311 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Fri, 05 Jun 2015 01:54:33 GMT
+22:24:20,311 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Fri, 05 Jun 2015 01:54:33 GMT
+22:24:20,312 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 01:54:33 GMT' into Date object for key: Last-Modified
+22:24:20,312 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 01:54:33 GMT' into Date object for key: Last-Modified
+22:24:20,312 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+22:24:20,312 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+22:24:20,312 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+22:24:20,312 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+22:24:20,313 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+22:24:20,313 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+22:24:20,313 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+22:24:20,313 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+22:24:20,333 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+22:24:20,333 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:20,333 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]; keep alive indefinitely
+22:24:20,333 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+22:24:20,334 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+22:24:20,334 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:20,334 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+22:24:20,334 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]; keep alive indefinitely
+22:24:20,334 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+22:24:20,335 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+22:24:20,340 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+22:24:20,340 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:20,340 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]; keep alive indefinitely
+22:24:20,340 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+22:24:20,341 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+22:24:20,348  INFO LocalFileDirectory:98 - Starting local data directory processing...
+22:24:20,349 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File prostate.csv up to date.,None)...
+22:24:20,350 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File prostate.csv up to date.,None) complete.
+22:24:20,350 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.py up to date.,None)...
+22:24:20,350 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.py up to date.,None) complete.
+22:24:20,350 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file domino.last.dump.rda,None)...
+22:24:20,352 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file domino.last.dump.rda,None) complete.
+22:24:20,353 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file domino.workspace.RData,None)...
+22:24:20,353 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file domino.workspace.RData,None) complete.
+22:24:20,354 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.r up to date.,None)...
+22:24:20,354 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.r up to date.,None) complete.
+22:24:20,354 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file results/stdout.txt,None)...
+22:24:20,354 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file results/stdout.txt,None) complete.
+22:24:20,354 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File .dominoignore up to date.,None)...
+22:24:20,355 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File .dominoignore up to date.,None) complete.
+22:24:20,355 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File datasets/prostate.csv up to date.,None)...
+22:24:20,355 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File datasets/prostate.csv up to date.,None) complete.
+22:24:20,355 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File README.md up to date.,None)...
+22:24:20,355 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File README.md up to date.,None) complete.
+22:24:20,356  INFO LocalFileDirectory:98 - Local data directory processing complete.
+22:24:20,356  INFO FileSyncClient:98 - Local data directory processing complete.
+22:24:20,356  INFO FileSyncClient:98 - Clearing local blob directory
+22:24:20,357  INFO FileSyncClient:98 - Download complete.
+22:24:20,360  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+22:24:20,360 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+22:24:20,444 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+22:24:20,444  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+22:24:20,446  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+22:24:20,472  INFO FileSyncClient:98 - Starting upload...
+22:24:20,489  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]).
+22:24:20,500  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]).
+22:24:20,502  INFO FileStructureRepoSynchronizer:98 - Upload starting...
+22:24:20,506  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+22:24:20,512 DEBUG FileStructureRepoSynchronizer:79 - Local paths:
+	datasets/prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	README.md -> FileSignature(1433296608000,34,Sha1(a7ab275b14fab5d65c4312c5e296c5300f4420e3))
+	domino.workspace.RData -> FileSignature(1433469272000,850,Sha1(26e2c5d5c4d620ead24fbc39d75933917e85fbd6))
+	dl_h2o.py -> FileSignature(1433470849000,821,Sha1(a89115bbec892d7dd79144480d9c50cf321a1659))
+	prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	domino.last.dump.rda -> FileSignature(1433469270000,335,Sha1(187fac91b3e983d40f95860e551366bdce834b29))
+	dl_h2o.r -> FileSignature(1433470956000,1085,Sha1(d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2))
+	results/stdout.txt -> FileSignature(1433469272000,2985,Sha1(8f74243b445d6bbe082bc5c7f19ad6cbe856c493))
+	.dominoignore -> FileSignature(1431963553000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+22:24:20,512  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]), refs/remotes/origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:21,982  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]), refs/remotes/origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:21,982  INFO FileStructureRepo:98 - Fetch result = [No Update]
+22:24:21,984  INFO FileStructureRepo:98 - Computing diffs between base = refs/remotes/origin/master (b2f95b263b7b8f930d3c8e0daed552ab96beff46) and target = HEAD (320b573ea712afc37b34cd12ccc3c6234a346d2e).
+22:24:21,991 DEBUG FileStructureRepo:79 - Updates:
+	. File domino.last.dump.rda up to date.
+	x Modifying file dl_h2o.r
+	. File .dominoignore up to date.
+	. File results/stdout.txt up to date.
+	. File README.md up to date.
+	+ Adding file prostate.csv
+	. File domino.workspace.RData up to date.
+	. File datasets/prostate.csv up to date.
+	. File dl_h2o.py up to date.
+22:24:21,992  INFO FileStructureRepoSynchronizer:98 - Upload before push starting
+22:24:22,482 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedPutUrl/d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2/1085?x=true with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+22:24:22,547  INFO AnonymousS3BlobStore:98 - Generated signed PUT url: https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471122&Signature=18xx50z93HTvSg4HSIoiN0MIIOQ%3D
+22:24:22,548  INFO AnonymousS3BlobStore:98 - Starting signed PUT request
+22:24:22,548 DEBUG Jets3tProperties:317 - s3service.https-only=true
+22:24:22,548 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+22:24:22,549 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:22,549 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:22,549 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:22,549 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:22,549 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:22,549 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:22,549 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:22,549 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:22,550 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:22,550 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:22,550 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:22,550 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:22,550 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:22,550 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:22,551 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:22,551 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:22,551 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+22:24:22,551 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+22:24:22,552 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+22:24:22,552 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+22:24:22,552 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+22:24:22,552 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+22:24:22,552 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+22:24:22,552 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:22,553 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+22:24:22,553 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+22:24:22,553 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+22:24:22,553 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+22:24:22,553 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:22,554 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+22:24:22,554 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+22:24:22,554 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+22:24:22,554 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+22:24:22,554 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+22:24:22,554 DEBUG Jets3tProperties:263 - devpay.user-token=null
+22:24:22,554 DEBUG Jets3tProperties:263 - devpay.product-token=null
+22:24:22,555 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+22:24:22,557 DEBUG Jets3tProperties:317 - storage-service.disable-live-md5=false
+22:24:22,558 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+22:24:22,559 DEBUG RepeatableRequestEntity:143 - Setting maximal read-ahead mark limit for markable input stream java.io.ByteArrayInputStream assuming it doesn't use in-memory storage: 495
+22:24:22,559 DEBUG Jets3tProperties:281 - httpclient.read-throttle=0
+22:24:22,559 DEBUG RestStorageService:308 - Performing PUT request for 'https://com-cerebro-domino-prod-blobs.s3.amazonaws.com/d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471122&Signature=18xx50z93HTvSg4HSIoiN0MIIOQ%3D', expecting response codes: [200]
+22:24:22,560 DEBUG RestStorageService:312 - Headers: [x-amz-server-side-encryption: AES256, Content-Encoding: gzip, Content-Type: application/x-gzip, x-amz-meta-domino-original-blob-length: 1085]
+22:24:22,560 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+22:24:22,567 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+22:24:22,568 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+22:24:22,569 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com], timeout = 0
+22:24:22,569 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+22:24:22,569 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:22,570 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:22,570 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]]
+22:24:22,571 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3.amazonaws.com:443
+22:24:23,010 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+22:24:23,010 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+22:24:23,010 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+22:24:23,010 DEBUG DefaultClientConnection:264 - Sending request: PUT /d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471122&Signature=18xx50z93HTvSg4HSIoiN0MIIOQ%3D HTTP/1.1
+22:24:23,010 DEBUG headers:268 - >> PUT /d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433471122&Signature=18xx50z93HTvSg4HSIoiN0MIIOQ%3D HTTP/1.1
+22:24:23,010 DEBUG headers:271 - >> x-amz-server-side-encryption: AES256
+22:24:23,011 DEBUG headers:271 - >> Content-Encoding: gzip
+22:24:23,011 DEBUG headers:271 - >> Content-Type: application/x-gzip
+22:24:23,011 DEBUG headers:271 - >> x-amz-meta-domino-original-blob-length: 1085
+22:24:23,011 DEBUG headers:271 - >> Content-Length: 495
+22:24:23,011 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3.amazonaws.com
+22:24:23,011 DEBUG headers:271 - >> Connection: Keep-Alive
+22:24:23,011 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+22:24:23,011 DEBUG headers:271 - >> Expect: 100-continue
+22:24:23,144 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 100 Continue
+22:24:23,144 DEBUG headers:252 - << HTTP/1.1 100 Continue
+22:24:23,157 DEBUG RepeatableRequestEntity:276 - MD5 digest of data sent for 'd9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2' - B64:2WchXIhy0VdqYzoDb2+CUA== Hex:d967215c8872d1576a633a036f6f8250
+22:24:23,270 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+22:24:23,270 DEBUG headers:252 - << HTTP/1.1 200 OK
+22:24:23,270 DEBUG headers:255 - << x-amz-id-2: tJcynwvuerqqP7RUo/fo387cGmhvRxDLLj2+3yS+9dlzO4HS3Ida5PseSZmhSa7QliBqd/m7kCE=
+22:24:23,270 DEBUG headers:255 - << x-amz-request-id: E7922E01A30F4F10
+22:24:23,271 DEBUG headers:255 - << Date: Fri, 05 Jun 2015 02:24:23 GMT
+22:24:23,271 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+22:24:23,271 DEBUG headers:255 - << ETag: "d967215c8872d1576a633a036f6f8250"
+22:24:23,271 DEBUG headers:255 - << Content-Length: 0
+22:24:23,271 DEBUG headers:255 - << Server: AmazonS3
+22:24:23,272 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+22:24:23,272 DEBUG RestStorageService:370 - Response for 'PUT'. Content-Type: , Headers: [x-amz-id-2: tJcynwvuerqqP7RUo/fo387cGmhvRxDLLj2+3yS+9dlzO4HS3Ida5PseSZmhSa7QliBqd/m7kCE=, x-amz-request-id: E7922E01A30F4F10, Date: Fri, 05 Jun 2015 02:24:23 GMT, x-amz-server-side-encryption: AES256, ETag: "d967215c8872d1576a633a036f6f8250", Content-Length: 0, Server: AmazonS3]
+22:24:23,272 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@6c5b7ce8
+22:24:23,272 DEBUG RestStorageService:375 - Entity length: 0
+22:24:23,272 DEBUG RestStorageService:387 - Received expected response code: true
+22:24:23,272 DEBUG RestStorageService:388 -   expected code(s): [200].
+22:24:23,273 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+22:24:23,273 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]
+22:24:23,273 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3.amazonaws.com]][null]; keep alive indefinitely
+22:24:23,273 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+22:24:23,273 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+22:24:23,274 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+22:24:23,274 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="d967215c8872d1576a633a036f6f8250"
+22:24:23,274 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+22:24:23,274 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Fri, 05 Jun 2015 02:24:23 GMT
+22:24:23,274 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 02:24:23 GMT' into Date object for key: Date
+22:24:23,275 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=0
+22:24:23,275 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+22:24:23,275 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+22:24:23,275 DEBUG RestStorageService:907 - Object upload was automatically verified, the calculated MD5 hash value matched the ETag returned by S3: d9f5ec2c2e6ff7a5b07fce089c8975b3fc821ac2
+22:24:23,277  INFO FileStructureRepoSynchronizer:98 - Upload before push complete
+22:24:23,279  INFO FileStructureRepo:98 - Starting push to origin: local/master = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]), origin/master = Some(AnyObjectId[b2f95b263b7b8f930d3c8e0daed552ab96beff46]).
+22:24:25,664 DEBUG FileStructureRepo:79 - Push result: [RemoteRefUpdate[remoteName=refs/heads/master, OK, (null)...320b573ea712afc37b34cd12ccc3c6234a346d2e, fastForward, srcRef=refs/heads/master, message=null]]
+22:24:25,666  INFO FileStructureRepo:98 - Push to origin complete: local/master = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]), origin/master = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]).
+22:24:25,666  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = true
+22:24:25,666  INFO FileSyncClient:98 - Upload complete. Success = true
+21:18:30,453  INFO Domino:98 - ================================================================================
+21:18:30,456  INFO Domino:98 - starting client
+21:18:30,460 DEBUG Domino:79 - CWD = /Users/slorenz/Code/deep-domino
+21:18:30,461  INFO Domino:98 - executing command: sync
+21:18:31,149  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+21:18:31,164 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:32,445 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+21:18:32,448  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+21:18:32,456  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+21:18:32,595  INFO FileSyncClient:98 - Starting upload...
+21:18:32,874  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]).
+21:18:33,106  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]).
+21:18:33,110  INFO FileStructureRepoSynchronizer:98 - Upload starting...
+21:18:33,117  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+21:18:33,147 DEBUG FileStructureRepoSynchronizer:79 - Local paths:
+	datasets/prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	README.md -> FileSignature(1433296608000,34,Sha1(a7ab275b14fab5d65c4312c5e296c5300f4420e3))
+	domino.workspace.RData -> FileSignature(1433469272000,850,Sha1(26e2c5d5c4d620ead24fbc39d75933917e85fbd6))
+	dl_h2o.py -> FileSignature(1433470849000,821,Sha1(a89115bbec892d7dd79144480d9c50cf321a1659))
+	prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	domino.last.dump.rda -> FileSignature(1433469270000,335,Sha1(187fac91b3e983d40f95860e551366bdce834b29))
+	dl_h2o.r -> FileSignature(1433471818000,1083,Sha1(e6a3a48c09308a3de7337bef8fbe0d3971e60e2a))
+	results/stdout.txt -> FileSignature(1433469272000,2985,Sha1(8f74243b445d6bbe082bc5c7f19ad6cbe856c493))
+	.dominoignore -> FileSignature(1431963553000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+21:18:33,158  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]), refs/remotes/origin/master = Some(AnyObjectId[320b573ea712afc37b34cd12ccc3c6234a346d2e]).
+21:18:36,059  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]), refs/remotes/origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:36,060  INFO FileStructureRepo:98 - Fetch result = TrackingRefUpdate[refs/heads/master -> refs/remotes/origin/master (forced) 320b573..2624fc6]
+21:18:36,061  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = false
+21:18:36,061  INFO FileSyncClient:98 - Upload complete. Success = false
+21:18:36,064  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+21:18:36,065 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:36,136 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+21:18:36,136  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+21:18:36,137  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+21:18:36,139  INFO FileSyncClient:98 - Starting download...
+21:18:36,183  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]).
+21:18:36,196  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]).
+21:18:36,197  INFO FileStructureRepoSynchronizer:98 - Starting download...
+21:18:36,201  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+21:18:36,204  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]), refs/remotes/origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,531  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]), refs/remotes/origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,531  INFO FileStructureRepo:98 - Fetch result = [No Update]
+21:18:37,532  INFO FileStructureRepo:98 - Finding shared ancestor between commit f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64 1433899113 -----p and commit 2624fc6bd619c71488b28291a7cff99eb1c1379a 1433898611 -----p
+21:18:37,537 DEBUG FileStructureRepo:79 - Ancestors of Commit B, up until ancestors of A:
+commit 2624fc6bd619c71488b28291a7cff99eb1c1379a 1433898611 ----sp
+commit 343b128871e3f2cfd8a709990a395c45c924fc51 1433898337 ----sp
+commit ce4698406722f454251de0f39451c1d425c87068 1433819272 ----sp
+commit f610ff71137d568480e9c1c7c6361256dcb06031 1433819216 ----sp
+commit 3fdb67fb5a1b0c3f233fcaba1d5676252be75d28 1433818922 ----sp
+commit d7e1875c8a158cedcc7a3caf17768a86f4aa6e78 1433818722 ----sp
+commit 1e576d290a497b046eef4664c972ae7e33a34ded 1433719955 ----sp
+commit 0994e2f64640233a30bd2dc4efc08c47a0d73206 1433719522 ----sp
+commit 4986c6744d3a1827a7fe7267a13ce05d39fd2e20 1433711607 ----sp
+commit 64c171398b1770540b2973bc04c9a3fda0125c46 1433711448 ----sp
+commit faa8ef9669b760a013a70fbeb3f8064887716dec 1433644787 ----sp
+commit aefcd69f7e29740d58204a38a91693524c709db4 1433644650 ----sp
+commit 0306290f39def9fe0e9f34b3aaeb4c6d582c6318 1433644392 ----sp
+commit e891440be46a485524d02de1e3e9a645c5dea4c2 1433644117 ----sp
+commit 7f1e38c250570cbc164007c2e8e8a476387ed111 1433636182 ----sp
+commit 0fd27023223ba8904ef773dbaf12e50043915b75 1433635585 ----sp
+commit d30d6b8a9ec6196db3d3b04781f34a1490a3d2ae 1433600265 ----sp
+commit 8ed521f36f59f743b895fdaf4676c79a80f3a2a5 1433600087 ----sp
+commit 507366508cc0f2f067ccafaa8bf91624cb9b8536 1433471763 ----sp
+commit c62415cc325db0abda752bb602c236378a52a0dd 1433471720 ----sp
+commit e40c26e3e8338a100bea0a807f1550948e5f4cf5 1433471304 ----sp
+commit 27388c51b31d67beea597b54c0b1858cb9fe0edc 1433471157 ----sp
+21:18:37,540  INFO FileStructureRepo:98 - Shared ancestor computed as commit 320b573ea712afc37b34cd12ccc3c6234a346d2e 1433471058 ---usp
+21:18:37,543 DEBUG FileStructureRepo:79 - BranchState between master and refs/remotes/origin/master with currentHeadCommitId=AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64], sharedAncestorId=commit 320b573ea712afc37b34cd12ccc3c6234a346d2e 1433471058 ---usp, serverTipCommitId=AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a] is BranchState(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64],commit 320b573ea712afc37b34cd12ccc3c6234a346d2e 1433471058 ---usp,AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,543  INFO FileStructureRepoSynchronizer:98 - Integrating fetch changes into local...
+21:18:37,544  INFO FileStructureRepo:98 - Starting fast-forward: master = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]), origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,559 DEBUG FileStructureRepo:79 - Merge result = Merge of revisions f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64, 2624fc6bd619c71488b28291a7cff99eb1c1379a with base 2624fc6bd619c71488b28291a7cff99eb1c1379a using strategy recursive resulted in: Aborted. 
+21:18:37,560  INFO FileStructureRepo:98 - Fast-forward failed with status = Aborted
+21:18:37,561  INFO FileStructureRepo:98 - Fast-forward complete: master = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]), origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,562  INFO FileStructureRepo:98 - Finding shared ancestor between commit f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64 1433899113 -----p and commit 2624fc6bd619c71488b28291a7cff99eb1c1379a 1433898611 -----p
+21:18:37,564 DEBUG FileStructureRepo:79 - Ancestors of Commit B, up until ancestors of A:
+commit 2624fc6bd619c71488b28291a7cff99eb1c1379a 1433898611 ----sp
+commit 343b128871e3f2cfd8a709990a395c45c924fc51 1433898337 ----sp
+commit ce4698406722f454251de0f39451c1d425c87068 1433819272 ----sp
+commit f610ff71137d568480e9c1c7c6361256dcb06031 1433819216 ----sp
+commit 3fdb67fb5a1b0c3f233fcaba1d5676252be75d28 1433818922 ----sp
+commit d7e1875c8a158cedcc7a3caf17768a86f4aa6e78 1433818722 ----sp
+commit 1e576d290a497b046eef4664c972ae7e33a34ded 1433719955 ----sp
+commit 0994e2f64640233a30bd2dc4efc08c47a0d73206 1433719522 ----sp
+commit 4986c6744d3a1827a7fe7267a13ce05d39fd2e20 1433711607 ----sp
+commit 64c171398b1770540b2973bc04c9a3fda0125c46 1433711448 ----sp
+commit faa8ef9669b760a013a70fbeb3f8064887716dec 1433644787 ----sp
+commit aefcd69f7e29740d58204a38a91693524c709db4 1433644650 ----sp
+commit 0306290f39def9fe0e9f34b3aaeb4c6d582c6318 1433644392 ----sp
+commit e891440be46a485524d02de1e3e9a645c5dea4c2 1433644117 ----sp
+commit 7f1e38c250570cbc164007c2e8e8a476387ed111 1433636182 ----sp
+commit 0fd27023223ba8904ef773dbaf12e50043915b75 1433635585 ----sp
+commit d30d6b8a9ec6196db3d3b04781f34a1490a3d2ae 1433600265 ----sp
+commit 8ed521f36f59f743b895fdaf4676c79a80f3a2a5 1433600087 ----sp
+commit 507366508cc0f2f067ccafaa8bf91624cb9b8536 1433471763 ----sp
+commit c62415cc325db0abda752bb602c236378a52a0dd 1433471720 ----sp
+commit e40c26e3e8338a100bea0a807f1550948e5f4cf5 1433471304 ----sp
+commit 27388c51b31d67beea597b54c0b1858cb9fe0edc 1433471157 ----sp
+21:18:37,564  INFO FileStructureRepo:98 - Shared ancestor computed as commit 320b573ea712afc37b34cd12ccc3c6234a346d2e 1433471058 ---usp
+21:18:37,564 DEBUG FileStructureRepo:79 - BranchState between master and refs/remotes/origin/master with currentHeadCommitId=AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64], sharedAncestorId=commit 320b573ea712afc37b34cd12ccc3c6234a346d2e 1433471058 ---usp, serverTipCommitId=AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a] is BranchState(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64],commit 320b573ea712afc37b34cd12ccc3c6234a346d2e 1433471058 ---usp,AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,566  INFO FileStructureRepo:98 - Starting rebase onto origin: master = Some(AnyObjectId[f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64]), origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,647  INFO FileStructureRepo:98 - Rebase stopped with status = STOPPED
+21:18:37,648  INFO FileStructureRepo:98 - Rebase complete: 2624fc6bd619c71488b28291a7cff99eb1c1379a = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]), origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:37,648  INFO FileStructureRepoSynchronizer:98 - Resolving rebase conflicted commit commit f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64 1433899113 -t--sp in favor of local changes starting...
+21:18:37,649  INFO FileStructureRepo:98 - Computing updates between: local = commit f7d0f6d329ec6808bb4ca1a4ff4ad348e4e00e64 1433899113 -t--sp, shared = commit 320b573ea712afc37b34cd12ccc3c6234a346d2e 1433471058 ---usp, origin = AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]
+21:18:37,657 DEBUG FileStructureRepo:79 - Local changes:
+. File datasets/prostate.csv up to date.
+x Modifying file dl_h2o.r
+. File README.md up to date.
+. File results/stdout.txt up to date.
+. File .dominoignore up to date.
+. File domino.last.dump.rda up to date.
+. File prostate.csv up to date.
+. File domino.workspace.RData up to date.
+. File dl_h2o.py up to date.
+21:18:37,662 DEBUG FileStructureRepo:79 - Origin changes:
+. File datasets/prostate.csv up to date.
+x Modifying file dl_h2o.r
+. File README.md up to date.
+. File results/stdout.txt up to date.
+. File .dominoignore up to date.
+. File domino.last.dump.rda up to date.
+. File prostate.csv up to date.
+. File domino.workspace.RData up to date.
+. File dl_h2o.py up to date.
+21:18:37,677 DEBUG FileStructureRepo:79 - Merged updates:
+FileUpdate(. File README.md up to date.,None)
+FileUpdate(. File .dominoignore up to date.,None)
+FileUpdate(x Modifying file dl_h2o.r,Some(x Modifying file dl_h2o.r))
+FileUpdate(x Modifying file results/stdout.txt,None)
+FileUpdate(x Modifying file dl_h2o.py,None)
+FileUpdate(x Modifying file domino.last.dump.rda,None)
+FileUpdate(- Deleting file prostate.csv,None)
+FileUpdate(. File datasets/prostate.csv up to date.,None)
+FileUpdate(. File domino.workspace.RData up to date.,None)
+FileUpdate(+ Adding file dominostats.json,None)
+21:18:37,684  INFO FileStructureRepo:98 - Starting finishRebase...
+21:18:37,720  INFO FileStructureRepo:98 - finishRebase complete.  Status = OK
+21:18:37,720  INFO FileStructureRepoSynchronizer:98 - Resolving rebase in favor of local changes complete. Updates size = 10
+21:18:37,726 DEBUG FileStructureRepo:79 - Local changes:
+x Modifying file dl_h2o.py
+. File README.md up to date.
+. File dl_h2o.r up to date.
+x Modifying file results/stdout.txt
+. File domino.workspace.RData up to date.
+x Modifying file domino.last.dump.rda
+. File .dominoignore up to date.
+. File datasets/prostate.csv up to date.
+- Deleting file prostate.csv
++ Adding file dominostats.json
+21:18:37,731 DEBUG FileStructureRepo:79 - Origin changes:
+x Modifying file dl_h2o.py
+. File README.md up to date.
+. File dl_h2o.r up to date.
+x Modifying file results/stdout.txt
+. File domino.workspace.RData up to date.
+x Modifying file domino.last.dump.rda
+. File .dominoignore up to date.
+. File datasets/prostate.csv up to date.
+- Deleting file prostate.csv
++ Adding file dominostats.json
+21:18:37,737 DEBUG FileStructureRepo:79 - Merged updates:
+FileUpdate(x Modifying file results/stdout.txt,None)
+FileUpdate(. File dl_h2o.r up to date.,Some(x Modifying file dl_h2o.r))
+FileUpdate(. File domino.workspace.RData up to date.,None)
+FileUpdate(. File .dominoignore up to date.,None)
+FileUpdate(. File README.md up to date.,None)
+FileUpdate(- Deleting file prostate.csv,None)
+FileUpdate(x Modifying file dl_h2o.py,None)
+FileUpdate(x Modifying file domino.last.dump.rda,None)
+FileUpdate(. File datasets/prostate.csv up to date.,None)
+FileUpdate(+ Adding file dominostats.json,None)
+21:18:37,738  INFO FileStructureRepoSynchronizer:98 - Integrating changes complete.
+21:18:37,739 DEBUG FileStructureRepoSynchronizer:79 - Download updates:
+FileUpdate(x Modifying file results/stdout.txt,None)
+FileUpdate(. File dl_h2o.r up to date.,Some(x Modifying file dl_h2o.r))
+FileUpdate(. File domino.workspace.RData up to date.,None)
+FileUpdate(. File .dominoignore up to date.,None)
+FileUpdate(. File README.md up to date.,None)
+FileUpdate(- Deleting file prostate.csv,None)
+FileUpdate(x Modifying file dl_h2o.py,None)
+FileUpdate(x Modifying file domino.last.dump.rda,None)
+FileUpdate(. File datasets/prostate.csv up to date.,None)
+FileUpdate(+ Adding file dominostats.json,None)
+21:18:37,739  INFO FileStructureRepoSynchronizer:98 - Download updates size = 10
+21:18:37,792 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/43794141c1471d6344c12ee9991d4fea4d6b601e with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:37,793 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/88a58496203d0364a6cd245e05686830f126d413 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:37,793 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/6013055791df922fc0ddbd7712f6262cbb7371d4 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:37,792 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/332e38c42bb555fce67bd95a6486f8955bdf738e with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:37,792 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedGetUrl/e11876e24f65822566da1563eb1b8588e485ff44 with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:37,922  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/43794141c1471d6344c12ee9991d4fea4d6b601e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=BdDNKipvc4hA%2BgWeGR6R6LZfcyI%3D
+21:18:37,922  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+21:18:37,984 DEBUG Jets3tProperties:317 - s3service.https-only=true
+21:18:37,985 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+21:18:37,996 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:37,996 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:37,996 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:37,996 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:37,997 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:37,999 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:37,999 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:37,999 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,009 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,010 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,010 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,012 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,012 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,012 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,012 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,012 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,013 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+21:18:38,013 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+21:18:38,013 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,013 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,013 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,013 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,013 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,014 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,014 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,014 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,014 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,014 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,014 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,014 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,014 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,015 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,015 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,015 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,015 DEBUG Jets3tProperties:263 - devpay.user-token=null
+21:18:38,015 DEBUG Jets3tProperties:263 - devpay.product-token=null
+21:18:38,015 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+21:18:38,015 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,017 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/43794141c1471d6344c12ee9991d4fea4d6b601e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=BdDNKipvc4hA%2BgWeGR6R6LZfcyI%3D', expecting response codes: [200]
+21:18:38,017 DEBUG RestStorageService:312 - Headers: []
+21:18:38,017 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+21:18:38,043  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/88a58496203d0364a6cd245e05686830f126d413?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=SWU5CB0S%2Bifzszuci4Ar5AUd6r4%3D
+21:18:38,043  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+21:18:38,045 DEBUG Jets3tProperties:317 - s3service.https-only=true
+21:18:38,045 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+21:18:38,046 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,046 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,046 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,046 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,046 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,047  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/e11876e24f65822566da1563eb1b8588e485ff44?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=gsftJP7ZRsvKLE6naSA%2FICvJGnQ%3D
+21:18:38,047  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+21:18:38,047 DEBUG Jets3tProperties:317 - s3service.https-only=true
+21:18:38,047 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,048 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+21:18:38,049 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,049 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,049 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,049 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,048 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,050 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,050 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,051 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,051 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,051 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,051 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,052 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,052 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,051 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,053 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,053 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,052 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,054 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,054 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,054 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,054 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,054 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+21:18:38,055 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+21:18:38,055 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,055 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,056 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,056 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,056 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,056 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,057 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,057 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,057 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,057 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,057 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,058 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,058 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,058 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,058 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,053 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,059 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,059 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,059 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,059 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,060 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+21:18:38,060 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+21:18:38,058 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,061 DEBUG Jets3tProperties:263 - devpay.user-token=null
+21:18:38,061 DEBUG Jets3tProperties:263 - devpay.product-token=null
+21:18:38,059 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+21:18:38,061 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+21:18:38,062 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,061 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,062 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,062 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,061 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+21:18:38,063 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,062 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/e11876e24f65822566da1563eb1b8588e485ff44?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=gsftJP7ZRsvKLE6naSA%2FICvJGnQ%3D', expecting response codes: [200]
+21:18:38,063 DEBUG RestStorageService:312 - Headers: []
+21:18:38,063 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,063 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+21:18:38,064 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,064 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,064 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,064 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,065 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,065 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,065 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,065 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,065 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,065 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,066 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,066 DEBUG Jets3tProperties:263 - devpay.user-token=null
+21:18:38,066 DEBUG Jets3tProperties:263 - devpay.product-token=null
+21:18:38,066 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+21:18:38,066 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,066 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/88a58496203d0364a6cd245e05686830f126d413?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=SWU5CB0S%2Bifzszuci4Ar5AUd6r4%3D', expecting response codes: [200]
+21:18:38,067 DEBUG RestStorageService:312 - Headers: []
+21:18:38,067 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+21:18:38,070 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+21:18:38,070 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+21:18:38,073 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+21:18:38,073 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+21:18:38,082  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/332e38c42bb555fce67bd95a6486f8955bdf738e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=2niJcYNxcdzbC%2F2kugURzIQAyAY%3D
+21:18:38,082  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+21:18:38,082 DEBUG Jets3tProperties:317 - s3service.https-only=true
+21:18:38,082 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+21:18:38,083 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,083 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,083 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,083 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,083 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,083 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,083 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,084 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,084 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,084 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,084 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,084 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,084 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,085 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,085 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,085 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,085 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+21:18:38,085 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+21:18:38,086 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,086 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,086 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,086 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,086 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,087 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,087 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,087 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,087 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,087 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,088 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,088 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,088 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,088 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,088 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,089 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,089 DEBUG Jets3tProperties:263 - devpay.user-token=null
+21:18:38,089 DEBUG Jets3tProperties:263 - devpay.product-token=null
+21:18:38,089 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+21:18:38,089 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,090 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/332e38c42bb555fce67bd95a6486f8955bdf738e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=2niJcYNxcdzbC%2F2kugURzIQAyAY%3D', expecting response codes: [200]
+21:18:38,090 DEBUG RestStorageService:312 - Headers: []
+21:18:38,090 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+21:18:38,095 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+21:18:38,095 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+21:18:38,107 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com], timeout = 0
+21:18:38,107 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com], timeout = 0
+21:18:38,107 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com], timeout = 0
+21:18:38,107 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com], timeout = 0
+21:18:38,108 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+21:18:38,108 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+21:18:38,108 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+21:18:38,108 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+21:18:38,109 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,109 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,109 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,109 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,109 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,110 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]]
+21:18:38,109 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,110 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]]
+21:18:38,110 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,110 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,111 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]]
+21:18:38,111 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]]
+21:18:38,555 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+21:18:38,555 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+21:18:38,555 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+21:18:38,555 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+21:18:38,926  INFO AnonymousS3BlobStore:98 - Generated signed GET url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/6013055791df922fc0ddbd7712f6262cbb7371d4?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=dM9SLtl8Qdvs73f2b9izaAjimdQ%3D
+21:18:38,926  INFO AnonymousS3BlobStore:98 - Starting signed GET request
+21:18:38,926 DEBUG Jets3tProperties:317 - s3service.https-only=true
+21:18:38,926 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+21:18:38,927 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,927 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,927 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,927 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,927 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,927 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,928 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,928 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,928 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,928 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,928 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,928 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,929 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,929 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,929 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,929 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,929 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+21:18:38,929 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+21:18:38,930 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:38,930 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:38,930 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:38,930 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:38,930 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:38,931 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:38,931 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:38,931 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:38,931 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:38,931 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:38,931 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,931 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:38,932 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:38,932 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:38,932 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:38,932 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:38,932 DEBUG Jets3tProperties:263 - devpay.user-token=null
+21:18:38,932 DEBUG Jets3tProperties:263 - devpay.product-token=null
+21:18:38,933 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+21:18:38,933 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:38,933 DEBUG RestStorageService:308 - Performing GET request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/6013055791df922fc0ddbd7712f6262cbb7371d4?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=dM9SLtl8Qdvs73f2b9izaAjimdQ%3D', expecting response codes: [200]
+21:18:38,933 DEBUG RestStorageService:312 - Headers: []
+21:18:38,933 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+21:18:38,937 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+21:18:38,937 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+21:18:38,938 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com], timeout = 0
+21:18:38,938 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+21:18:38,938 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,938 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:38,938 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]]
+21:18:38,939 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+21:18:39,050 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+21:18:39,050 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+21:18:39,050 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+21:18:39,052 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+21:18:39,062 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+21:18:39,062 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+21:18:39,062 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+21:18:39,062 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+21:18:39,062 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+21:18:39,062 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+21:18:39,062 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+21:18:39,063 DEBUG DefaultClientConnection:264 - Sending request: GET /e11876e24f65822566da1563eb1b8588e485ff44?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=gsftJP7ZRsvKLE6naSA%2FICvJGnQ%3D HTTP/1.1
+21:18:39,063 DEBUG DefaultClientConnection:264 - Sending request: GET /43794141c1471d6344c12ee9991d4fea4d6b601e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=BdDNKipvc4hA%2BgWeGR6R6LZfcyI%3D HTTP/1.1
+21:18:39,062 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+21:18:39,063 DEBUG DefaultClientConnection:264 - Sending request: GET /88a58496203d0364a6cd245e05686830f126d413?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=SWU5CB0S%2Bifzszuci4Ar5AUd6r4%3D HTTP/1.1
+21:18:39,063 DEBUG DefaultClientConnection:264 - Sending request: GET /332e38c42bb555fce67bd95a6486f8955bdf738e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=2niJcYNxcdzbC%2F2kugURzIQAyAY%3D HTTP/1.1
+21:18:39,064 DEBUG headers:268 - >> GET /332e38c42bb555fce67bd95a6486f8955bdf738e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=2niJcYNxcdzbC%2F2kugURzIQAyAY%3D HTTP/1.1
+21:18:39,064 DEBUG headers:268 - >> GET /e11876e24f65822566da1563eb1b8588e485ff44?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=gsftJP7ZRsvKLE6naSA%2FICvJGnQ%3D HTTP/1.1
+21:18:39,064 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+21:18:39,064 DEBUG headers:271 - >> Connection: Keep-Alive
+21:18:39,065 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:39,064 DEBUG headers:268 - >> GET /88a58496203d0364a6cd245e05686830f126d413?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=SWU5CB0S%2Bifzszuci4Ar5AUd6r4%3D HTTP/1.1
+21:18:39,064 DEBUG headers:268 - >> GET /43794141c1471d6344c12ee9991d4fea4d6b601e?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=BdDNKipvc4hA%2BgWeGR6R6LZfcyI%3D HTTP/1.1
+21:18:39,065 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+21:18:39,065 DEBUG headers:271 - >> Connection: Keep-Alive
+21:18:39,065 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:39,065 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+21:18:39,064 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+21:18:39,066 DEBUG headers:271 - >> Connection: Keep-Alive
+21:18:39,066 DEBUG headers:271 - >> Connection: Keep-Alive
+21:18:39,066 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:39,066 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:39,198 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+21:18:39,199 DEBUG headers:252 - << HTTP/1.1 200 OK
+21:18:39,199 DEBUG headers:255 - << x-amz-id-2: yOh9mHK/YNOOBgxvN8Q1481SRafAtJIexrZH9WrbS3/46ymQy00AvrM+t5xcPII5h3U2KSKCPmA=
+21:18:39,199 DEBUG headers:255 - << x-amz-request-id: C77CA84840B1C23A
+21:18:39,199 DEBUG headers:255 - << Date: Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,199 DEBUG headers:255 - << Content-Encoding: gzip
+21:18:39,199 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 914
+21:18:39,199 DEBUG headers:255 - << Last-Modified: Tue, 09 Jun 2015 02:58:48 GMT
+21:18:39,199 DEBUG headers:255 - << ETag: "c88828a09655aacec5fc3f595ea7912a"
+21:18:39,200 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+21:18:39,200 DEBUG headers:255 - << Accept-Ranges: bytes
+21:18:39,200 DEBUG headers:255 - << Content-Type: application/x-gzip
+21:18:39,200 DEBUG headers:255 - << Content-Length: 434
+21:18:39,200 DEBUG headers:255 - << Server: AmazonS3
+21:18:39,202 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+21:18:39,202 DEBUG headers:252 - << HTTP/1.1 200 OK
+21:18:39,202 DEBUG headers:255 - << x-amz-id-2: C5K/QpVigtKtC2DFRT33kgxlq0yBdlurDKJMawGxa/S0+Vbku+PznzDyWU9KME5lFe4LlzeuR+A=
+21:18:39,202 DEBUG headers:255 - << x-amz-request-id: 64F7D049BB67A340
+21:18:39,202 DEBUG headers:255 - << Date: Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,202 DEBUG headers:255 - << Content-Encoding: gzip
+21:18:39,203 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 1446
+21:18:39,203 DEBUG headers:255 - << Last-Modified: Tue, 09 Jun 2015 02:58:49 GMT
+21:18:39,203 DEBUG headers:255 - << ETag: "34412bf67b3f0edfc6b925d13ff25cf1"
+21:18:39,203 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+21:18:39,203 DEBUG headers:255 - << Accept-Ranges: bytes
+21:18:39,203 DEBUG headers:255 - << Content-Type: application/x-gzip
+21:18:39,203 DEBUG headers:255 - << Content-Length: 664
+21:18:39,204 DEBUG headers:255 - << Server: AmazonS3
+21:18:39,205 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+21:18:39,205 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+21:18:39,207 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: C5K/QpVigtKtC2DFRT33kgxlq0yBdlurDKJMawGxa/S0+Vbku+PznzDyWU9KME5lFe4LlzeuR+A=, x-amz-request-id: 64F7D049BB67A340, Date: Wed, 10 Jun 2015 01:18:40 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 1446, Last-Modified: Tue, 09 Jun 2015 02:58:49 GMT, ETag: "34412bf67b3f0edfc6b925d13ff25cf1", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 664, Server: AmazonS3]
+21:18:39,207 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: yOh9mHK/YNOOBgxvN8Q1481SRafAtJIexrZH9WrbS3/46ymQy00AvrM+t5xcPII5h3U2KSKCPmA=, x-amz-request-id: C77CA84840B1C23A, Date: Wed, 10 Jun 2015 01:18:40 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 914, Last-Modified: Tue, 09 Jun 2015 02:58:48 GMT, ETag: "c88828a09655aacec5fc3f595ea7912a", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 434, Server: AmazonS3]
+21:18:39,208 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@38248df6
+21:18:39,207 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@1146b156
+21:18:39,208 DEBUG RestStorageService:375 - Entity length: 434
+21:18:39,208 DEBUG RestStorageService:375 - Entity length: 664
+21:18:39,208 DEBUG RestStorageService:387 - Received expected response code: true
+21:18:39,209 DEBUG RestStorageService:387 - Received expected response code: true
+21:18:39,209 DEBUG RestStorageService:388 -   expected code(s): [200].
+21:18:39,209 DEBUG RestStorageService:388 -   expected code(s): [200].
+21:18:39,212 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+21:18:39,212 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+21:18:39,212 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+21:18:39,212 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+21:18:39,212 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="c88828a09655aacec5fc3f595ea7912a"
+21:18:39,212 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+21:18:39,212 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,212 DEBUG ServiceUtils:356 - Parsing date string 'Wed, 10 Jun 2015 01:18:40 GMT' into Date object for key: Date
+21:18:39,212 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="34412bf67b3f0edfc6b925d13ff25cf1"
+21:18:39,213 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+21:18:39,213 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,213 DEBUG ServiceUtils:356 - Parsing date string 'Wed, 10 Jun 2015 01:18:40 GMT' into Date object for key: Date
+21:18:39,214 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=434
+21:18:39,214 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+21:18:39,214 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=664
+21:18:39,214 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+21:18:39,214 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+21:18:39,215 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Tue, 09 Jun 2015 02:58:49 GMT
+21:18:39,215 DEBUG ServiceUtils:356 - Parsing date string 'Tue, 09 Jun 2015 02:58:49 GMT' into Date object for key: Last-Modified
+21:18:39,214 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+21:18:39,215 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+21:18:39,215 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+21:18:39,215 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+21:18:39,215 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+21:18:39,215 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Tue, 09 Jun 2015 02:58:48 GMT
+21:18:39,216 DEBUG ServiceUtils:356 - Parsing date string 'Tue, 09 Jun 2015 02:58:48 GMT' into Date object for key: Last-Modified
+21:18:39,216 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+21:18:39,216 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+21:18:39,216 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+21:18:39,216 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+21:18:39,223 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+21:18:39,224 DEBUG headers:252 - << HTTP/1.1 200 OK
+21:18:39,224 DEBUG headers:255 - << x-amz-id-2: hzRgp3bC98lSYYP4T9AvPcaiFj3bCZWT54b9ADOdvIlQeby+j76Wj40cKZsxuh9LUrrHki8rAKE=
+21:18:39,224 DEBUG headers:255 - << x-amz-request-id: 9065EE6C3975629E
+21:18:39,224 DEBUG headers:255 - << Date: Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,224 DEBUG headers:255 - << Content-Encoding: gzip
+21:18:39,224 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 19773
+21:18:39,224 DEBUG headers:255 - << Last-Modified: Wed, 10 Jun 2015 01:10:12 GMT
+21:18:39,224 DEBUG headers:255 - << ETag: "8353bebc721c3840b68edfdc6566e7ef"
+21:18:39,224 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+21:18:39,224 DEBUG headers:255 - << Accept-Ranges: bytes
+21:18:39,224 DEBUG headers:255 - << Content-Type: application/x-gzip
+21:18:39,224 DEBUG headers:255 - << Content-Length: 3312
+21:18:39,225 DEBUG headers:255 - << Server: AmazonS3
+21:18:39,225 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+21:18:39,225 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: hzRgp3bC98lSYYP4T9AvPcaiFj3bCZWT54b9ADOdvIlQeby+j76Wj40cKZsxuh9LUrrHki8rAKE=, x-amz-request-id: 9065EE6C3975629E, Date: Wed, 10 Jun 2015 01:18:40 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 19773, Last-Modified: Wed, 10 Jun 2015 01:10:12 GMT, ETag: "8353bebc721c3840b68edfdc6566e7ef", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 3312, Server: AmazonS3]
+21:18:39,225 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@4c6f97a7
+21:18:39,225 DEBUG RestStorageService:375 - Entity length: 3312
+21:18:39,225 DEBUG RestStorageService:387 - Received expected response code: true
+21:18:39,225 DEBUG RestStorageService:388 -   expected code(s): [200].
+21:18:39,225 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+21:18:39,225 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+21:18:39,225 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="8353bebc721c3840b68edfdc6566e7ef"
+21:18:39,225 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+21:18:39,226 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,226 DEBUG ServiceUtils:356 - Parsing date string 'Wed, 10 Jun 2015 01:18:40 GMT' into Date object for key: Date
+21:18:39,226 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=3312
+21:18:39,226 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+21:18:39,226 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+21:18:39,226 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Wed, 10 Jun 2015 01:10:12 GMT
+21:18:39,226 DEBUG ServiceUtils:356 - Parsing date string 'Wed, 10 Jun 2015 01:10:12 GMT' into Date object for key: Last-Modified
+21:18:39,226 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+21:18:39,226 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+21:18:39,226 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+21:18:39,226 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+21:18:39,243 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+21:18:39,244 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:39,244 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]; keep alive indefinitely
+21:18:39,244 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+21:18:39,243 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+21:18:39,245 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:39,245 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+21:18:39,245 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]; keep alive indefinitely
+21:18:39,245 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+21:18:39,245 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:39,246 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+21:18:39,245 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+21:18:39,246 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]; keep alive indefinitely
+21:18:39,246 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+21:18:39,246 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+21:18:39,270 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+21:18:39,270 DEBUG headers:252 - << HTTP/1.1 200 OK
+21:18:39,270 DEBUG headers:255 - << x-amz-id-2: OKQCThTwrj2DnmOM2f58EeYUfuXLVjwWAYNIuUs9QXZ1cVRIzfiXH86x6vMefChRBoOUaveRxmk=
+21:18:39,271 DEBUG headers:255 - << x-amz-request-id: 9F381F3541C78FC0
+21:18:39,271 DEBUG headers:255 - << Date: Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,271 DEBUG headers:255 - << Content-Encoding: gzip
+21:18:39,271 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 67
+21:18:39,271 DEBUG headers:255 - << Last-Modified: Sun, 07 Jun 2015 23:32:36 GMT
+21:18:39,271 DEBUG headers:255 - << ETag: "841cc3b590e234c99c1c9ea8dcdf1e84"
+21:18:39,271 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+21:18:39,271 DEBUG headers:255 - << Accept-Ranges: bytes
+21:18:39,272 DEBUG headers:255 - << Content-Type: application/x-gzip
+21:18:39,272 DEBUG headers:255 - << Content-Length: 70
+21:18:39,272 DEBUG headers:255 - << Server: AmazonS3
+21:18:39,272 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+21:18:39,272 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: OKQCThTwrj2DnmOM2f58EeYUfuXLVjwWAYNIuUs9QXZ1cVRIzfiXH86x6vMefChRBoOUaveRxmk=, x-amz-request-id: 9F381F3541C78FC0, Date: Wed, 10 Jun 2015 01:18:40 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 67, Last-Modified: Sun, 07 Jun 2015 23:32:36 GMT, ETag: "841cc3b590e234c99c1c9ea8dcdf1e84", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 70, Server: AmazonS3]
+21:18:39,273 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@42ca4d5
+21:18:39,273 DEBUG RestStorageService:375 - Entity length: 70
+21:18:39,273 DEBUG RestStorageService:387 - Received expected response code: true
+21:18:39,273 DEBUG RestStorageService:388 -   expected code(s): [200].
+21:18:39,273 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+21:18:39,273 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+21:18:39,273 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="841cc3b590e234c99c1c9ea8dcdf1e84"
+21:18:39,273 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+21:18:39,274 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,274 DEBUG ServiceUtils:356 - Parsing date string 'Wed, 10 Jun 2015 01:18:40 GMT' into Date object for key: Date
+21:18:39,274 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=70
+21:18:39,274 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+21:18:39,274 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+21:18:39,274 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Sun, 07 Jun 2015 23:32:36 GMT
+21:18:39,275 DEBUG ServiceUtils:356 - Parsing date string 'Sun, 07 Jun 2015 23:32:36 GMT' into Date object for key: Last-Modified
+21:18:39,275 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+21:18:39,275 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+21:18:39,275 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+21:18:39,275 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+21:18:39,277 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+21:18:39,278 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:39,278 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]; keep alive indefinitely
+21:18:39,278 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+21:18:39,278 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+21:18:39,421 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+21:18:39,421 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+21:18:39,421 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+21:18:39,421 DEBUG DefaultClientConnection:264 - Sending request: GET /6013055791df922fc0ddbd7712f6262cbb7371d4?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=dM9SLtl8Qdvs73f2b9izaAjimdQ%3D HTTP/1.1
+21:18:39,422 DEBUG headers:268 - >> GET /6013055791df922fc0ddbd7712f6262cbb7371d4?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899178&Signature=dM9SLtl8Qdvs73f2b9izaAjimdQ%3D HTTP/1.1
+21:18:39,422 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+21:18:39,422 DEBUG headers:271 - >> Connection: Keep-Alive
+21:18:39,422 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:39,563 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+21:18:39,564 DEBUG headers:252 - << HTTP/1.1 200 OK
+21:18:39,564 DEBUG headers:255 - << x-amz-id-2: nlwhA86LLs5xDVgxq93T94atRyKs8p+4v/AADt0kkogqhnTfse8UIMUlpU4svwsSNjsudr2FqYU=
+21:18:39,564 DEBUG headers:255 - << x-amz-request-id: 3EB257EC0DACA952
+21:18:39,564 DEBUG headers:255 - << Date: Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,564 DEBUG headers:255 - << Content-Encoding: gzip
+21:18:39,564 DEBUG headers:255 - << x-amz-meta-domino-original-blob-length: 332
+21:18:39,564 DEBUG headers:255 - << Last-Modified: Fri, 05 Jun 2015 02:25:57 GMT
+21:18:39,565 DEBUG headers:255 - << ETag: "f58a2ee3e8d00ac6dbb11591108e7c71"
+21:18:39,565 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+21:18:39,565 DEBUG headers:255 - << Accept-Ranges: bytes
+21:18:39,565 DEBUG headers:255 - << Content-Type: application/x-gzip
+21:18:39,565 DEBUG headers:255 - << Content-Length: 355
+21:18:39,565 DEBUG headers:255 - << Server: AmazonS3
+21:18:39,566 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+21:18:39,566 DEBUG RestStorageService:370 - Response for 'GET'. Content-Type: application/x-gzip, Headers: [x-amz-id-2: nlwhA86LLs5xDVgxq93T94atRyKs8p+4v/AADt0kkogqhnTfse8UIMUlpU4svwsSNjsudr2FqYU=, x-amz-request-id: 3EB257EC0DACA952, Date: Wed, 10 Jun 2015 01:18:40 GMT, Content-Encoding: gzip, x-amz-meta-domino-original-blob-length: 332, Last-Modified: Fri, 05 Jun 2015 02:25:57 GMT, ETag: "f58a2ee3e8d00ac6dbb11591108e7c71", x-amz-server-side-encryption: AES256, Accept-Ranges: bytes, Content-Type: application/x-gzip, Content-Length: 355, Server: AmazonS3]
+21:18:39,566 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@25f9ffaf
+21:18:39,566 DEBUG RestStorageService:375 - Entity length: 355
+21:18:39,566 DEBUG RestStorageService:387 - Received expected response code: true
+21:18:39,566 DEBUG RestStorageService:388 -   expected code(s): [200].
+21:18:39,566 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+21:18:39,566 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+21:18:39,566 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="f58a2ee3e8d00ac6dbb11591108e7c71"
+21:18:39,567 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+21:18:39,567 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Wed, 10 Jun 2015 01:18:40 GMT
+21:18:39,567 DEBUG ServiceUtils:356 - Parsing date string 'Wed, 10 Jun 2015 01:18:40 GMT' into Date object for key: Date
+21:18:39,567 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=355
+21:18:39,567 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+21:18:39,567 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Encoding=gzip
+21:18:39,567 DEBUG ServiceUtils:325 - Leaving header item unchanged: Last-Modified=Fri, 05 Jun 2015 02:25:57 GMT
+21:18:39,567 DEBUG ServiceUtils:356 - Parsing date string 'Fri, 05 Jun 2015 02:25:57 GMT' into Date object for key: Last-Modified
+21:18:39,567 DEBUG ServiceUtils:329 - Ignoring metadata item: Accept-Ranges=bytes
+21:18:39,568 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Type=application/x-gzip
+21:18:39,568 DEBUG ServiceUtils:304 - Removed meatadata header prefix x-amz-meta- from key: x-amz-meta-domino-original-blob-length=>domino-original-blob-length
+21:18:39,568 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+21:18:39,579 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+21:18:39,579 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:39,579 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]; keep alive indefinitely
+21:18:39,580 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+21:18:39,580 DEBUG HttpMethodReleaseInputStream:196 - Released HttpMethod as its response data stream is closed
+21:18:39,590  INFO LocalFileDirectory:98 - Starting local data directory processing...
+21:18:39,591 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file results/stdout.txt,None)...
+21:18:39,594 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file results/stdout.txt,None) complete.
+21:18:39,594 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.r up to date.,Some(x Modifying file dl_h2o.r))...
+21:18:39,595 DEBUG LocalFileDirectory:79 - Update FileUpdate(. File dl_h2o.r up to date.,Some(x Modifying file dl_h2o.r)) is in conflict.
+21:18:39,595 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File dl_h2o.r up to date.,Some(x Modifying file dl_h2o.r)) complete.
+21:18:39,596 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File domino.workspace.RData up to date.,None)...
+21:18:39,596 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File domino.workspace.RData up to date.,None) complete.
+21:18:39,596 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File .dominoignore up to date.,None)...
+21:18:39,597 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File .dominoignore up to date.,None) complete.
+21:18:39,597 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File README.md up to date.,None)...
+21:18:39,597 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File README.md up to date.,None) complete.
+21:18:39,597 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(- Deleting file prostate.csv,None)...
+21:18:39,690 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(- Deleting file prostate.csv,None) complete.
+21:18:39,691 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file dl_h2o.py,None)...
+21:18:39,691 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file dl_h2o.py,None) complete.
+21:18:39,691 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file domino.last.dump.rda,None)...
+21:18:39,692 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(x Modifying file domino.last.dump.rda,None) complete.
+21:18:39,692 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File datasets/prostate.csv up to date.,None)...
+21:18:39,692 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(. File datasets/prostate.csv up to date.,None) complete.
+21:18:39,693 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file dominostats.json,None)...
+21:18:39,693 DEBUG LocalFileDirectory:79 - Processing update FileUpdate(+ Adding file dominostats.json,None) complete.
+21:18:39,694  INFO LocalFileDirectory:98 - Local data directory processing complete.
+21:18:39,695  INFO FileSyncClient:98 - Local data directory processing complete.
+21:18:39,695  INFO FileSyncClient:98 - Clearing local blob directory
+21:18:39,697  INFO FileSyncClient:98 - Download complete.
+21:18:39,700  INFO ProjectControllerProxy:98 - getting git host from https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino
+21:18:39,700 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/gitRepoUri/seanlorenz/deep-domino with proxy detected as DIRECT (full request = Request(GET,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:39,764 DEBUG ProjectControllerProxy:79 - response from server: https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git
+21:18:39,765  INFO CLIFileSyncClient$:98 - checking whether remote (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git) needs to be upgraded to match new desired url (https://git.dominoup.com/projectrepos/556e/556e5f7be4b07ad4c4827df5.git)
+21:18:39,766  INFO CLIFileSyncClient$:98 - Running in hosted mode, so using AnonymousS3BlobStore
+21:18:39,795  INFO FileSyncClient:98 - Starting upload...
+21:18:39,817  INFO FileStructureRepo:98 - Staging structure. Current branch = master, head commit ID = Some(AnyObjectId[604cd5499e60c9c8d9fb244f3f96bb9373e15325]).
+21:18:39,830  INFO FileStructureRepo:98 - Staging structure complete. Head advanced to commit ID = Some(AnyObjectId[604cd5499e60c9c8d9fb244f3f96bb9373e15325]).
+21:18:39,831  INFO FileStructureRepoSynchronizer:98 - Upload starting...
+21:18:39,838  INFO FileStructureRepoSynchronizer:98 - Asserting repo is safe to operate.  repo state = SAFE, isClean = true, isSafe = true, currentBranch = master.
+21:18:39,844 DEBUG FileStructureRepoSynchronizer:79 - Local paths:
+	datasets/prostate.csv -> FileSignature(1433347526000,9254,Sha1(7c8e53436f7c8fe19fd7b3beec45a40f7176f7d6))
+	dominostats.json -> FileSignature(1433719954000,67,Sha1(43794141c1471d6344c12ee9991d4fea4d6b601e))
+	README.md -> FileSignature(1433296608000,34,Sha1(a7ab275b14fab5d65c4312c5e296c5300f4420e3))
+	domino.workspace.RData -> FileSignature(1433471763000,850,Sha1(26e2c5d5c4d620ead24fbc39d75933917e85fbd6))
+	dl_h2o.py -> FileSignature(1433898326000,914,Sha1(e11876e24f65822566da1563eb1b8588e485ff44))
+	domino.last.dump.rda -> FileSignature(1433471762000,332,Sha1(6013055791df922fc0ddbd7712f6262cbb7371d4))
+	dl_h2o.r -> FileSignature(1433471818000,1083,Sha1(e6a3a48c09308a3de7337bef8fbe0d3971e60e2a))
+	results/stdout.txt -> FileSignature(1433898610000,19773,Sha1(332e38c42bb555fce67bd95a6486f8955bdf738e))
+	.dominoignore -> FileSignature(1431963553000,287,Sha1(a5f5eb83114b9b51af35b87c00dace198c7db58b))
+21:18:39,845  INFO FileStructureRepo:98 - Starting fetch: master = Some(AnyObjectId[604cd5499e60c9c8d9fb244f3f96bb9373e15325]), refs/remotes/origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:41,221  INFO FileStructureRepo:98 - Fetch complete: master = Some(AnyObjectId[604cd5499e60c9c8d9fb244f3f96bb9373e15325]), refs/remotes/origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:41,221  INFO FileStructureRepo:98 - Fetch result = [No Update]
+21:18:41,222  INFO FileStructureRepo:98 - Computing diffs between base = refs/remotes/origin/master (2624fc6bd619c71488b28291a7cff99eb1c1379a) and target = HEAD (604cd5499e60c9c8d9fb244f3f96bb9373e15325).
+21:18:41,227 DEBUG FileStructureRepo:79 - Updates:
+	. File datasets/prostate.csv up to date.
+	. File domino.workspace.RData up to date.
+	. File dl_h2o.py up to date.
+	. File dominostats.json up to date.
+	. File README.md up to date.
+	. File results/stdout.txt up to date.
+	. File .dominoignore up to date.
+	. File domino.last.dump.rda up to date.
+	x Modifying file dl_h2o.r
+21:18:41,228  INFO FileStructureRepoSynchronizer:98 - Upload before push starting
+21:18:41,845 DEBUG DefaultTransport:79 - Issuing request to https://app.dominodatalab.com/blobs/signedPutUrl/e6a3a48c09308a3de7337bef8fbe0d3971e60e2a/1083?x=true with proxy detected as DIRECT (full request = Request(POST,<function2>,<function1>,List(),List((X-Domino-Api-Key,spdQMuV3BIceoAAO3RYbehu2H51gu26rQOr9PJ9pqvTaUlC8LkKrikOq8IVPNom9), (content-type,application/x-www-form-urlencoded)),List(<function1>, <function1>, <function1>, <function1>, <function1>),DIRECT,UTF-8,4096))
+21:18:41,928  INFO AnonymousS3BlobStore:98 - Generated signed PUT url: https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/e6a3a48c09308a3de7337bef8fbe0d3971e60e2a?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899182&Signature=c0HmC0MVIH2MNvjup8YWJPL3PAI%3D
+21:18:41,929  INFO AnonymousS3BlobStore:98 - Starting signed PUT request
+21:18:41,929 DEBUG Jets3tProperties:317 - s3service.https-only=true
+21:18:41,930 DEBUG Jets3tProperties:299 - storage-service.internal-error-retry-max=5
+21:18:41,930 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:41,930 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:41,931 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:41,931 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:41,931 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:41,931 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:41,931 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:41,931 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:41,932 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:41,932 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:41,932 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:41,932 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:41,932 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:41,933 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:41,933 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:41,933 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:41,933 DEBUG Jets3tProperties:263 - s3service.default-storage-class=null
+21:18:41,933 DEBUG Jets3tProperties:263 - s3service.server-side-encryption=null
+21:18:41,934 DEBUG Jets3tProperties:263 - http.connection-manager.factory-class-name=org.jets3t.service.utils.RestUtils$ConnManagerFactory
+21:18:41,934 DEBUG Jets3tProperties:299 - httpclient.connection-timeout-ms=60000
+21:18:41,934 DEBUG Jets3tProperties:299 - httpclient.socket-timeout-ms=60000
+21:18:41,934 DEBUG Jets3tProperties:317 - httpclient.stale-checking-enabled=true
+21:18:41,934 DEBUG Jets3tProperties:263 - httpclient.useragent=null
+21:18:41,935 DEBUG RestUtils:328 - Setting user agent string: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:41,935 DEBUG Jets3tProperties:317 - http.protocol.expect-continue=true
+21:18:41,935 DEBUG Jets3tProperties:281 - httpclient.connection-manager-timeout=0
+21:18:41,935 DEBUG Jets3tProperties:299 - httpclient.retry-max=5
+21:18:41,935 DEBUG Jets3tProperties:317 - httpclient.proxy-autodetect=true
+21:18:41,935 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:41,935 DEBUG PluginProxyUtil:99 - About to attempt auto proxy detection under Java version:1.7.0_60-b19
+21:18:41,936 DEBUG PluginProxyUtil:119 - Sun Plugin reported java version not 1.3.X, 1.4.X, 1.5.X or 1.6.X - trying failover detection...
+21:18:41,936 DEBUG PluginProxyUtil:126 - Using failover proxy detection...
+21:18:41,936 DEBUG PluginProxyUtil:289 - Plugin Proxy Config List Property:null
+21:18:41,936 DEBUG PluginProxyUtil:318 - No configured plugin proxy list
+21:18:41,936 DEBUG Jets3tProperties:263 - devpay.user-token=null
+21:18:41,936 DEBUG Jets3tProperties:263 - devpay.product-token=null
+21:18:41,936 DEBUG Jets3tProperties:317 - httpclient.requester-pays-buckets-enabled=false
+21:18:41,947 DEBUG Jets3tProperties:317 - storage-service.disable-live-md5=false
+21:18:41,947 DEBUG Jets3tProperties:263 - s3service.s3-endpoint=s3.amazonaws.com
+21:18:41,948 DEBUG RepeatableRequestEntity:143 - Setting maximal read-ahead mark limit for markable input stream java.io.ByteArrayInputStream assuming it doesn't use in-memory storage: 494
+21:18:41,949 DEBUG Jets3tProperties:281 - httpclient.read-throttle=0
+21:18:41,949 DEBUG RestStorageService:308 - Performing PUT request for 'https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com/e6a3a48c09308a3de7337bef8fbe0d3971e60e2a?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899182&Signature=c0HmC0MVIH2MNvjup8YWJPL3PAI%3D', expecting response codes: [200]
+21:18:41,949 DEBUG RestStorageService:312 - Headers: [x-amz-server-side-encryption: AES256, Content-Encoding: gzip, Content-Type: application/x-gzip, x-amz-meta-domino-original-blob-length: 1083]
+21:18:41,949 DEBUG RestStorageService:649 - Service has no Credential and is un-authenticated, skipping authorization
+21:18:41,955 DEBUG Jets3tProperties:299 - httpclient.max-connections=20
+21:18:41,955 DEBUG Jets3tProperties:299 - httpclient.max-connections-per-host=0
+21:18:41,956 DEBUG RestUtils$ThreadSafeConnManager:221 - Get connection: HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com], timeout = 0
+21:18:41,956 DEBUG ConnPoolByRoute:350 - [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]] total kept alive: 0, total issued: 0, total allocated: 0 out of 20
+21:18:41,957 DEBUG ConnPoolByRoute:523 - No free connections [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:41,957 DEBUG ConnPoolByRoute:369 - Available capacity: 20 out of 20 [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:41,957 DEBUG ConnPoolByRoute:549 - Creating new connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]]
+21:18:41,958 DEBUG DefaultClientConnectionOperator:145 - Connecting to com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com:443
+21:18:42,425 DEBUG RequestAddCookies:132 - CookieSpec selected: best-match
+21:18:42,426 DEBUG RequestAuthCache:75 - Auth cache not set in the context
+21:18:42,426 DEBUG DefaultHttpClient:643 - Attempt 1 to execute request
+21:18:42,426 DEBUG DefaultClientConnection:264 - Sending request: PUT /e6a3a48c09308a3de7337bef8fbe0d3971e60e2a?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899182&Signature=c0HmC0MVIH2MNvjup8YWJPL3PAI%3D HTTP/1.1
+21:18:42,426 DEBUG headers:268 - >> PUT /e6a3a48c09308a3de7337bef8fbe0d3971e60e2a?AWSAccessKeyId=AKIAI5PSBTETLZMVAKCA&Expires=1433899182&Signature=c0HmC0MVIH2MNvjup8YWJPL3PAI%3D HTTP/1.1
+21:18:42,427 DEBUG headers:271 - >> x-amz-server-side-encryption: AES256
+21:18:42,427 DEBUG headers:271 - >> Content-Encoding: gzip
+21:18:42,427 DEBUG headers:271 - >> Content-Type: application/x-gzip
+21:18:42,427 DEBUG headers:271 - >> x-amz-meta-domino-original-blob-length: 1083
+21:18:42,427 DEBUG headers:271 - >> Content-Length: 494
+21:18:42,427 DEBUG headers:271 - >> Host: com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com
+21:18:42,428 DEBUG headers:271 - >> Connection: Keep-Alive
+21:18:42,428 DEBUG headers:271 - >> User-Agent: JetS3t/0.9.0 (Mac OS X/10.9.5; x86_64; en; JVM 1.7.0_60)
+21:18:42,428 DEBUG headers:271 - >> Expect: 100-continue
+21:18:42,545 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 100 Continue
+21:18:42,545 DEBUG headers:252 - << HTTP/1.1 100 Continue
+21:18:42,557 DEBUG RepeatableRequestEntity:276 - MD5 digest of data sent for 'e6a3a48c09308a3de7337bef8fbe0d3971e60e2a' - B64:211J6/IZ5hwinmHyiyGUOg== Hex:db5d49ebf219e61c229e61f28b21943a
+21:18:42,673 DEBUG DefaultClientConnection:249 - Receiving response: HTTP/1.1 200 OK
+21:18:42,673 DEBUG headers:252 - << HTTP/1.1 200 OK
+21:18:42,674 DEBUG headers:255 - << x-amz-id-2: iHzHxxuCrYMfLQfwJjYCLzQSb3dRi6g3w0Jukc4kQp5CuH2Qwfn9yEq83wM2ZsHEq2N0lNG3iGY=
+21:18:42,674 DEBUG headers:255 - << x-amz-request-id: D467B80432A75B45
+21:18:42,674 DEBUG headers:255 - << Date: Wed, 10 Jun 2015 01:18:43 GMT
+21:18:42,674 DEBUG headers:255 - << x-amz-server-side-encryption: AES256
+21:18:42,674 DEBUG headers:255 - << ETag: "db5d49ebf219e61c229e61f28b21943a"
+21:18:42,674 DEBUG headers:255 - << Content-Length: 0
+21:18:42,675 DEBUG headers:255 - << Server: AmazonS3
+21:18:42,675 DEBUG DefaultHttpClient:487 - Connection can be kept alive indefinitely
+21:18:42,675 DEBUG RestStorageService:370 - Response for 'PUT'. Content-Type: , Headers: [x-amz-id-2: iHzHxxuCrYMfLQfwJjYCLzQSb3dRi6g3w0Jukc4kQp5CuH2Qwfn9yEq83wM2ZsHEq2N0lNG3iGY=, x-amz-request-id: D467B80432A75B45, Date: Wed, 10 Jun 2015 01:18:43 GMT, x-amz-server-side-encryption: AES256, ETag: "db5d49ebf219e61c229e61f28b21943a", Content-Length: 0, Server: AmazonS3]
+21:18:42,675 DEBUG RestStorageService:373 - Response entity: org.apache.http.conn.BasicManagedEntity@3c046178
+21:18:42,675 DEBUG RestStorageService:375 - Entity length: 0
+21:18:42,676 DEBUG RestStorageService:387 - Received expected response code: true
+21:18:42,676 DEBUG RestStorageService:388 -   expected code(s): [200].
+21:18:42,676 DEBUG RestUtils$ThreadSafeConnManager:270 - Released connection is reusable.
+21:18:42,676 DEBUG ConnPoolByRoute:434 - Releasing connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]
+21:18:42,676 DEBUG ConnPoolByRoute:460 - Pooling connection [HttpRoute[{s}->https://com-cerebro-domino-prod-blobs.s3-us-west-2.amazonaws.com]][null]; keep alive indefinitely
+21:18:42,676 DEBUG ConnPoolByRoute:679 - Notifying no-one, there are no waiting threads
+21:18:42,677 DEBUG ServiceUtils:291 - Cleaning up REST metadata items
+21:18:42,677 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-request-id=>request-id
+21:18:42,677 DEBUG ServiceUtils:325 - Leaving header item unchanged: ETag="db5d49ebf219e61c229e61f28b21943a"
+21:18:42,677 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-server-side-encryption=>server-side-encryption
+21:18:42,677 DEBUG ServiceUtils:325 - Leaving header item unchanged: Date=Wed, 10 Jun 2015 01:18:43 GMT
+21:18:42,678 DEBUG ServiceUtils:356 - Parsing date string 'Wed, 10 Jun 2015 01:18:43 GMT' into Date object for key: Date
+21:18:42,678 DEBUG ServiceUtils:316 - Leaving HTTP header item unchanged: Content-Length=0
+21:18:42,678 DEBUG ServiceUtils:310 - Removed header prefix x-amz- from key: x-amz-id-2=>id-2
+21:18:42,678 DEBUG ServiceUtils:329 - Ignoring metadata item: Server=AmazonS3
+21:18:42,678 DEBUG RestStorageService:907 - Object upload was automatically verified, the calculated MD5 hash value matched the ETag returned by S3: e6a3a48c09308a3de7337bef8fbe0d3971e60e2a
+21:18:42,680  INFO FileStructureRepoSynchronizer:98 - Upload before push complete
+21:18:42,681  INFO FileStructureRepo:98 - Starting push to origin: local/master = Some(AnyObjectId[604cd5499e60c9c8d9fb244f3f96bb9373e15325]), origin/master = Some(AnyObjectId[2624fc6bd619c71488b28291a7cff99eb1c1379a]).
+21:18:45,117 DEBUG FileStructureRepo:79 - Push result: [RemoteRefUpdate[remoteName=refs/heads/master, OK, (null)...604cd5499e60c9c8d9fb244f3f96bb9373e15325, fastForward, srcRef=refs/heads/master, message=null]]
+21:18:45,119  INFO FileStructureRepo:98 - Push to origin complete: local/master = Some(AnyObjectId[604cd5499e60c9c8d9fb244f3f96bb9373e15325]), origin/master = Some(AnyObjectId[604cd5499e60c9c8d9fb244f3f96bb9373e15325]).
+21:18:45,120  INFO FileStructureRepoSynchronizer:98 - Upload complete.  Success = true
+21:18:45,120  INFO FileSyncClient:98 - Upload complete. Success = true

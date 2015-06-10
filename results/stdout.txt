@@ -1,18 +1,239 @@
 ### SETUP PROCESS STARTED ###
 ### SETUP PROCESS FINISHED ###
+JVM stdout: /tmp/tmpXrRPvS/h2o_ubuntu_started_from_python.out
+JVM stderr: /tmp/tmpm6IJHC/h2o_ubuntu_started_from_python.err
+Using ice_root: /tmp/tmp8SmiT5
 
 
-No instance found at ip and port: localhost:54321. Trying to start local jar...
+Java Version: java version "1.7.0_80"
+Java(TM) SE Runtime Environment (build 1.7.0_80-b15)
+Java HotSpot(TM) 64-Bit Server VM (build 24.80-b11, mixed mode)
 
 
-No jar file found. Could not start local instance.
-Traceback (most recent call last):
-  File "ex_h2o.py", line 3, in <module>
-    h2o.init()
-  File "/usr/local/lib/python2.7/dist-packages/h2o/h2o.py", line 418, in init
-    H2OConnection(ip=ip, port=port,start_h2o=start_h2o,enable_assertions=enable_assertions,license=license,max_mem_size_GB=max_mem_size_GB,min_mem_size_GB=min_mem_size_GB,ice_root=ice_root,strict_version_check=strict_version_check)
-  File "/usr/local/lib/python2.7/dist-packages/h2o/connection.py", line 67, in __init__
-    cld = self._connect(size)
-  File "/usr/local/lib/python2.7/dist-packages/h2o/connection.py", line 151, in _connect
-    raise EnvironmentError("Max retries exceeded. Could not establish link to the H2O cloud @ " + str(self._ip) + ":" + str(self._port))
-EnvironmentError: Max retries exceeded. Could not establish link to the H2O cloud @ localhost:54321
+Starting H2O JVM and connecting: .Starting H2O JVM and connecting: ..Starting H2O JVM and connecting: ...Starting H2O JVM and connecting: ....Starting H2O JVM and connecting: .....Starting H2O JVM and connecting: ......Starting H2O JVM and connecting: .......Starting H2O JVM and connecting: ........Starting H2O JVM and connecting: .........Starting H2O JVM and connecting: .......... Connection sucessful!
+--------------------------  --------------------------
+H2O cluster uptime:         2 seconds 805 milliseconds
+H2O cluster version:        0.2.3.6
+H2O cluster name:           H2O_started_from_python
+H2O cluster total nodes:    1
+H2O cluster total memory:   6.55 GB
+H2O cluster total cores:    8
+H2O cluster allowed cores:  8
+H2O cluster healthy:        True
+H2O Connection ip:          127.0.0.1
+H2O Connection port:        54321
+--------------------------  --------------------------
+
+Parse Progress: [                                                  ] 00%Parse Progress: [##################################################] 100%
+Uploaded py9850b6df-e009-4c50-9743-af3babcab7a3 into cluster with 380 rows and 9 cols
+Rows: 380 Cols: 9
+
+Internal FluidVec compression/distribution summary:
+
+    chunk_type    count    count_percentage    size    size_percentage
+--  ------------  -------  ------------------  ------  -----------------
+    CBS           1        11.1111             118  B  2.42101
+    C1N           5        55.5556             2.2 KB  45.9581
+    C2            1        11.1111             828  B  16.9881
+    C2S           2        22.2222             1.6 KB  34.6327
+               ID             CAPSULE         AGE            RACE            DPROS          DCAPS           PSA            VOL            GLEASON
+-------------  -------------  --------------  -------------  --------------  -------------  --------------  -------------  -------------  -------------
+type           int            int             int            int             int            int             real           real           int
+mins           1.0            0.0             43.0           0.0             1.0            1.0             0.3            0.0            0.0
+mean           190.5          0.402631578947  66.0394736842  1.08684210526   2.27105263158  1.10789473684   15.4086315789  15.8129210526  6.38421052632
+maxs           380.0          1.0             79.0           2.0             4.0            2.0             139.7          97.6           9.0
+sigma          109.840793879  0.491074338963  6.52707126917  0.308773258025  1.00010761815  0.310656449351  19.9975726686  18.3476199673  1.09195337443
+zero_count     0              227             0              3               0              0               0              167            2
+missing_count  0              0               0              0               0              0               0              0              0
+
+deeplearning Model Build Progress: [                                                  ] 00%deeplearning Model Build Progress: [                                                  ] 00%deeplearning Model Build Progress: [                                                  ] 00%deeplearning Model Build Progress: [                                                  ] 00%deeplearning Model Build Progress: [                                                  ] 00%deeplearning Model Build Progress: [                                                  ] 00%deeplearning Model Build Progress: [#                                                 ] 02%deeplearning Model Build Progress: [###                                               ] 06%deeplearning Model Build Progress: [#####                                             ] 11%deeplearning Model Build Progress: [########                                          ] 17%deeplearning Model Build Progress: [###########                                       ] 23%deeplearning Model Build Progress: [###############                                   ] 30%deeplearning Model Build Progress: [##################                                ] 36%deeplearning Model Build Progress: [#####################                             ] 43%deeplearning Model Build Progress: [#########################                         ] 51%deeplearning Model Build Progress: [#############################                     ] 58%deeplearning Model Build Progress: [#################################                 ] 66%deeplearning Model Build Progress: [####################################              ] 73%deeplearning Model Build Progress: [########################################          ] 81%deeplearning Model Build Progress: [############################################      ] 89%deeplearning Model Build Progress: [################################################  ] 96%deeplearning Model Build Progress: [##################################################] 100%
+Model Details
+=============
+H2OBinomialModel :  Deep Learning
+Model Key:  DeepLearningModel__90193654c49153e2d1de1867bafd4f2a
+
+Status of Neuron Layers:
+
+    layer    units    type     dropout    l1    l2    mean_rate    rate_RMS     momentum    mean_weight    weight_RMS    mean_bias     bias_RMS
+--  -------  -------  -------  ---------  ----  ----  -----------  -----------  ----------  -------------  ------------  ------------  ----------
+    1        7        Input    0.0
+    2        10       Tanh     0.0        0.0   0.0   0.010013168  0.009371366  0.0         -0.12534025    1.1085656     0.3614597     0.9368598
+    3        10       Tanh     0.0        0.0   0.0   0.017176537  0.023939604  0.0         -0.10072071    1.4057434     -0.2518888    0.83795804
+    4        10       Tanh     0.0        0.0   0.0   0.020869862  0.022953266  0.0         0.019209556    1.8630408     -0.007475386  1.1065781
+    5        2        Softmax             0.0   0.0   0.030066695  0.008940588  0.0         -0.064418055   4.74567       -0.036898315  0.23581949
+
+
+ModelMetricsBinomial: deeplearning
+** Reported on train data. **
+
+MSE: 0.00894748541325
+R^2: 0.962897214327
+LogLoss: 0.0332947840483
+AUC: 0.999222596528
+Gini: 0.998445193055
+
+Confusion Matrix (Act/Pred):
+
+       0    1    Error    Rate
+-----  ---  ---  -------  --------------
+0      226  1    0.0044   (1.0/227.0)
+1      2    151  0.0131   (2.0/153.0)
+Total  228  152  0.0175   (0.0175/380.0)
+
+Maximum Metrics:
+
+metric                  threshold    value     idx
+----------------------  -----------  --------  -----
+f1                      0.817868     0.990164  88
+f2                      0.125729     0.992218  95
+f0point5                0.817868     0.992116  88
+accuracy                0.817868     0.992105  88
+precision               1            1         0
+absolute_MCC            0.817868     0.983585  88
+min_per_class_accuracy  0.817868     0.986928  88
+tns                     1            227       0
+fns                     1            95        0
+fps                     9.75406e-22  227       316
+tps                     0.125729     153       95
+tnr                     1            1         0
+fnr                     1            0.620915  0
+fpr                     9.75406e-22  1         316
+tpr                     0.125729     1         95
+
+Scoring History:
+
+    timestamp            duration    training_speed       epochs    samples     training_MSE    training_r2    training_logloss    training_AUC    training_classification_error
+--  -------------------  ----------  -------------------  --------  ----------  --------------  -------------  ------------------  --------------  -------------------------------
+    2015-06-10 01:09:52  0.000 sec                        0         0           nan             nan            nan                 nan             nan
+    2015-06-10 01:09:52  0.095 sec   40000.000 rows/sec   10        3800        0.193695        0.196799       0.619658            0.796723        0.281579
+    2015-06-10 01:09:57  5.175 sec   218821.256 rows/sec  2980      1.1324e+06  0.0197504       0.918101       0.0689245           0.996919        0.0236842
+    2015-06-10 01:10:02  10.182 sec  231015.518 rows/sec  6190      2.3522e+06  0.0186233       0.922774       0.0585033           0.998388        0.0184211
+    2015-06-10 01:10:07  15.199 sec  240265.807 rows/sec  9610      3.6518e+06  0.0105004       0.956458       0.0411213           0.998244        0.0105263
+    2015-06-10 01:10:07  15.798 sec  240536.777 rows/sec  10000     3.8e+06     0.00894749      0.962897       0.0332948           0.999223        0.00789474
+Displaying 10 row(s):
+  Row ID  predict    p0                        p1
+--------  ---------  ------------------------  ------------------------
+       1  [u'0']     [0.9989738464355469]      [0.0010261137504130602]
+       2  [u'0']     [0.9993640780448914]      [0.0006358756218105555]
+       3  [u'0']     [0.9999294281005859]      [7.056063623167574e-05]
+       4  [u'0']     [0.9995971322059631]      [0.0004029225092381239]
+       5  [u'0']     [0.9999934434890747]      [6.56371912555187e-06]
+       6  [u'1']     [2.1902482050251137e-09]  [1.0]
+       7  [u'0']     [0.9999324083328247]      [6.75444389344193e-05]
+       8  [u'0']     [0.9995694756507874]      [0.0004305336915422231]
+       9  [u'0']     [1.0]                     [5.1707637283016084e-08]
+      10  [u'0']     [0.9999997615814209]      [2.3233053525473224e-07]
+
+ModelMetricsBinomial: deeplearning
+** Reported on test data. **
+
+MSE: 0.00894748541325
+R^2: 0.962897214327
+LogLoss: 0.0332947840483
+AUC: 0.999222596528
+Gini: 0.998445193055
+
+Confusion Matrix (Act/Pred):
+
+       0    1    Error    Rate
+-----  ---  ---  -------  --------------
+0      226  1    0.0044   (1.0/227.0)
+1      2    151  0.0131   (2.0/153.0)
+Total  228  152  0.0175   (0.0175/380.0)
+
+Maximum Metrics:
+
+metric                  threshold    value     idx
+----------------------  -----------  --------  -----
+f1                      0.817868     0.990164  88
+f2                      0.125729     0.992218  95
+f0point5                0.817868     0.992116  88
+accuracy                0.817868     0.992105  88
+precision               1            1         0
+absolute_MCC            0.817868     0.983585  88
+min_per_class_accuracy  0.817868     0.986928  88
+tns                     1            227       0
+fns                     1            95        0
+fps                     9.75406e-22  227       316
+tps                     0.125729     153       95
+tnr                     1            1         0
+fnr                     1            0.620915  0
+fpr                     9.75406e-22  1         316
+tpr                     0.125729     1         95
+Successfully stopped H2O JVM started by the h2o python module.
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff0e000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de278e90>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff0d000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de278a90>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff0c000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de278ed0>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/DeepLearningModel__90193654c49153e2d1de1867bafd4f2a (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in Model Details
+=============
+H2OBinomialModel :  Deep Learning
+Model Key:  DeepLearningModel__90193654c49153e2d1de1867bafd4f2a
+
+Status of Neuron Layers:
+
+    layer    units    type     dropout    l1    l2    mean_rate    rate_RMS     momentum    mean_weight    weight_RMS    mean_bias     bias_RMS
+--  -------  -------  -------  ---------  ----  ----  -----------  -----------  ----------  -------------  ------------  ------------  ----------
+    1        7        Input    0.0
+    2        10       Tanh     0.0        0.0   0.0   0.010013168  0.009371366  0.0         -0.12534025    1.1085656     0.3614597     0.9368598
+    3        10       Tanh     0.0        0.0   0.0   0.017176537  0.023939604  0.0         -0.10072071    1.4057434     -0.2518888    0.83795804
+    4        10       Tanh     0.0        0.0   0.0   0.020869862  0.022953266  0.0         0.019209556    1.8630408     -0.007475386  1.1065781
+    5        2        Softmax             0.0   0.0   0.030066695  0.008940588  0.0         -0.064418055   4.74567       -0.036898315  0.23581949
+
+
+ModelMetricsBinomial: deeplearning
+** Reported on train data. **
+
+MSE: 0.00894748541325
+R^2: 0.962897214327
+LogLoss: 0.0332947840483
+AUC: 0.999222596528
+Gini: 0.998445193055
+
+Confusion Matrix (Act/Pred):
+
+       0    1    Error    Rate
+-----  ---  ---  -------  --------------
+0      226  1    0.0044   (1.0/227.0)
+1      2    151  0.0131   (2.0/153.0)
+Total  228  152  0.0175   (0.0175/380.0)
+
+Maximum Metrics:
+
+metric                  threshold    value     idx
+----------------------  -----------  --------  -----
+f1                      0.817868     0.990164  88
+f2                      0.125729     0.992218  95
+f0point5                0.817868     0.992116  88
+accuracy                0.817868     0.992105  88
+precision               1            1         0
+absolute_MCC            0.817868     0.983585  88
+min_per_class_accuracy  0.817868     0.986928  88
+tns                     1            227       0
+fns                     1            95        0
+fps                     9.75406e-22  227       316
+tps                     0.125729     153       95
+tnr                     1            1         0
+fnr                     1            0.620915  0
+fpr                     9.75406e-22  1         316
+tpr                     0.125729     1         95
+
+Scoring History:
+
+    timestamp            duration    training_speed       epochs    samples     training_MSE    training_r2    training_logloss    training_AUC    training_classification_error
+--  -------------------  ----------  -------------------  --------  ----------  --------------  -------------  ------------------  --------------  -------------------------------
+    2015-06-10 01:09:52  0.000 sec                        0         0           nan             nan            nan                 nan             nan
+    2015-06-10 01:09:52  0.095 sec   40000.000 rows/sec   10        3800        0.193695        0.196799       0.619658            0.796723        0.281579
+    2015-06-10 01:09:57  5.175 sec   218821.256 rows/sec  2980      1.1324e+06  0.0197504       0.918101       0.0689245           0.996919        0.0236842
+    2015-06-10 01:10:02  10.182 sec  231015.518 rows/sec  6190      2.3522e+06  0.0186233       0.922774       0.0585033           0.998388        0.0184211
+    2015-06-10 01:10:07  15.199 sec  240265.807 rows/sec  9610      3.6518e+06  0.0105004       0.956458       0.0411213           0.998244        0.0105263
+    2015-06-10 01:10:07  15.798 sec  240536.777 rows/sec  10000     3.8e+06     0.00894749      0.962897       0.0332948           0.999223        0.00789474
+<bound method H2OBinomialModel.__del__ of > ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff09000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de278910>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff08000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de278490>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff07000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de2789d0>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff06000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de278950>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff05000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de2788d0>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff04000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de24ff90>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff03000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de24fb90>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/py29d78aea-1f21-46cf-ae13-09af28e94c32 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de278e10>> ignored
+Exception EnvironmentError: EnvironmentError("h2o-py encountered an unexpected HTTP error:\n HTTPConnectionPool(host='localhost', port=54321): Max retries exceeded with url: /3/DKV/$04ff01000000ffffffff$_beceb0292b27b79be268a682870249a3 (Caused by <class 'socket.error'>: [Errno 111] Connection refused)",) in <bound method Expr.__del__ of <h2o.expr.Expr object at 0x7fa8de24fed0>> ignored
